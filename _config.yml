@@ -1,0 +1,15 @@
+# Site settings
+title: Snipcart Testing
+email: amjadrathod@gmail.com
+description: Here's a quick demo showing the integration between Snipcart and Jekyll. We hope you like it!
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: AmjadRathod
+github_username:  Amjadrathod
+api_key: Y2ZlZmE2MDktZGNmNC00NmIxLWI0NzItYmU4NDI0MDQ2YTgyNjM2Nzg3NTA1ODM5NTA3NDYx
+
+# Build settings
+markdown: kramdown
+collections:
+  products:
+    output: true
