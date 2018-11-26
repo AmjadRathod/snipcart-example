@@ -18,11 +18,11 @@
   visibility: hidden;
 }
 .snip-table__cell--right {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .snip-quantity-trigger {
   display: none;
 }
-.snip-table__cell--highlight {
-  display: none;
+.snip-layout .snip-table__cell--highlight {
+  visibility: hidden;
 }
