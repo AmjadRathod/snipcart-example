@@ -2,3 +2,6 @@
 .snip-layout .snip-header__user {
   display: none!important;
 }
+.snip-layout .snip-header__continue {
+  display: block!important;
+}
