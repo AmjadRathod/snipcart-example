@@ -1,1 +1,1 @@
-$("#snipcart-header-total").css("display", "none");
+$("#snipcart-header-total").css('display', 'none !important');
