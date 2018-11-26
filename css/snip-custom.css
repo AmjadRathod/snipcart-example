@@ -20,6 +20,6 @@
 .snip-layout .snip-table__cell--bold {
   visibility: hidden;
 }
-#snipcart-items-header tr th:nth-child(3) {
+#snipcart-items-header tr th:nth-child(4) {
   visibility: hidden;
 }
