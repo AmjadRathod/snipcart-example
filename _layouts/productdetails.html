@@ -17,7 +17,8 @@ head:
       data-item-id="{{ page.sku }}"
       data-item-image="{{ page.image }}"
       data-item-url="{{ site.baseurl }}"
-      data-item-price="{{ page.price }}">
+      data-item-price="{{ page.price }}"
+      data-item-quantity="1">
       Buy it for {{ page.price }} $
     </button>
   </div>
@@ -36,5 +37,5 @@ head:
       (Average: {{ sum | round: 1 }})
     {% endif %}
   </h3>
-  
+
 </div>
