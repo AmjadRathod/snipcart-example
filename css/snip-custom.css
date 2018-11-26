@@ -5,3 +5,6 @@
 .snip-layout .snip-header__continue {
   display: block!important;
 }
+.snip-layout .snip-footer {
+  display: none!important;
+}
