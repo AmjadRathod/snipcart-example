@@ -14,3 +14,15 @@
 .snip-layout .snip-header__total {
   display: none!important;
 }
+.snip-table__cell--center {
+  visibility: hidden;
+}
+.snip-table__cell--right:first-child {
+  visibility: hidden;
+}
+.snip-quantity-trigger {
+  display: none;
+}
+.snip-table__cell--bold {
+  display: none;
+}
