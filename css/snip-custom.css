@@ -11,3 +11,6 @@
 .snip-header__total {
   display: none!important;
 }
+.snip-layout .snip-header__total {
+  display: none!important;
+}
