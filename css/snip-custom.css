@@ -17,12 +17,3 @@
 .snip-table__cell--center {
   visibility: hidden;
 }
-.snip-table__cell--right {
-  /* visibility: hidden; */
-}
-.snip-quantity-trigger {
-  display: none;
-}
-.snip-layout .snip-table__cell--highlight {
-  visibility: hidden;
-}
