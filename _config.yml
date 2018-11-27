@@ -2,7 +2,7 @@
 title: Snipcart Testing
 email: amjadrathod@gmail.com
 description: This is Snipcart testing site
-baseurl: "https://amjadrathod.github.io/snipcart-example/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username: AmjadRathod
 github_username:  Amjadrathod
