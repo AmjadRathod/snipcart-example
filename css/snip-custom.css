@@ -101,7 +101,7 @@
 }
 .snip-form__container--checkbox label::before {
   padding: 5px 20px;
-  font-size: 16px;
+  font-size: 12px;
   content: 'DELIVERY ADDRESS same as INVOICE ADDRESS';
 }
 .snip-layout .snip-form__label {
