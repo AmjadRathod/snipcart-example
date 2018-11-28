@@ -181,6 +181,6 @@
 .snip-layout .snip-loader--bar.js-hidden {
   background-color: green!important;
 }
-.snip-layout .snip-header__back--button:hover, .snip-layout .snip-header__user-mail {
+.snip-header__user-text a {
   color: #000!important;
 }
