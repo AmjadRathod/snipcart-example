@@ -48,9 +48,10 @@ $(document).ready(function(){
     console.log("hi");
   });
   Snipcart.subscribe('authentication.success', function (email) {
-   console.log(email);
+   console.log(email !== null && email !== undefined);
    if (email) {
      $( ".logout-user" ).css( {"position": "absolute", "left": "85px", "top": "345px"} );
+     $( ".singup" ).css( {"display": "none"} );
    }
    else {
      $( ".logout-user" ).css( {"display": "none"} );
