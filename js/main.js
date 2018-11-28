@@ -14,13 +14,12 @@ $(document).ready(function(){
     $(continue_btn).insertBefore($("#snipcart-footer"));
     var site_logo = $("#site-logo").html();
     $(site_logo).insertBefore($("#snipcart-title"));
-  });
-  Snipcart.execute('bind', 'cart.opened', function() {
-    Snipcart.execute('unbind', 'cart.opened');
-
     var user_pro = $("#user-profile-info").html();
     $(user_pro).insertBefore($("#snipcart-header"));
   });
+  Snipcart.subscribe('cart.ready', function (data) {
+    console.log(data);
+});
   $('#dvDemo').attr('id', 'dvDemoNew');
   $("#snipcart-paymentmethod-pay").click(function(){
     console.log("hi");
