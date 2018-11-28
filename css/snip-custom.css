@@ -135,6 +135,7 @@
   color: yellow!important;
 }
 #snipcart-title::before {
+  font-size: 32px;
   content: 'YOUR CART for approval';
 }
 #snipcart-title {
