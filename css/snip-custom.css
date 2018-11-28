@@ -18,6 +18,7 @@
   display: none!important;
 } */
 .logout-user {
+  display: none;
   position: absolute;
   top: 345px;
   left: 85px;
