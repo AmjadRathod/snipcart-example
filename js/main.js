@@ -19,4 +19,9 @@ $(document).ready(function(){
     var user_pro = $("#user-profile-info").html();
     $(user_pro).insertBefore($("#snipcart-header"));
   });
+  $('#dvDemo').attr('id', 'dvDemoNew');
+  $("#snipcart-paymentmethod-pay").click(function(){
+    alert("The pplace order btn clicked.");
+  });
+  $("#control-qid13228").click();
 });
