@@ -47,8 +47,8 @@ $(document).ready(function(){
   $("#snipcart-paymentmethod-pay").click(function(){
     console.log("hi");
   });
-  Snipcart.subscribe('authentication.fail', function (email) {
+  Snipcart.subscribe('authentication.success', function (email) {
    console.log(email);
-  });
+});
   $("#control-qid13228").click();
 });
