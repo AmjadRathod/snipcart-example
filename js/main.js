@@ -26,6 +26,8 @@ $(document).ready(function(){
     }
     if (page == 'billing-address') {
       $( "#snipcart-current-user" ).css( {"left": "unset", "right": "0", "top": "0"} );
+      $( "#snipcart-header-total" ).css( {"display": "none"} );
+      $( ".snipcart-user-logout" ).css( {"display": "none"} );
       $( "#snipcart-current-user .logout-user" ).css( {"display": "none"} );
       $( "#snip-header__title:before" ).css( {"content": "Where", "text-transform": "capitalize"} );
       $( "#snip-header__title:after" ).css( {"content": "do we deliver"} );
