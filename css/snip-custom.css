@@ -64,6 +64,14 @@
 #snipcart-next{
   font-size: 0;
 }
+#snipcart-paymentmethod-pay::before{
+  padding: 5px 20px;
+  font-size: 16px;
+  content: 'Place Oreder';
+}
+#snipcart-paymentmethod-pay{
+  font-size: 0;
+}
 .snip-header__user p{
   font-size: 0;
 }
