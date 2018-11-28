@@ -203,6 +203,12 @@
   padding-top: 20px;
   content: 'YOUR CART ';
 }
+@media only screen and (min-width: 48em)
+{
+  .snip-layout .snip-actions {
+    padding-top: 80px;
+  }
+}
 /* chk box */
 .snipcart-checkbox-field {
   position: absolute;
