@@ -27,7 +27,7 @@
   visibility: hidden;
 }
 .snip-layout .snip-product__remove {
-  border-bottom: solid 3px blue;
+  border-bottom: solid 1px blue;
 }
 .snip-layout .snip-product__remove {
   color: blue!important;
