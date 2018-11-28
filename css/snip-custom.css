@@ -1,14 +1,3 @@
-
-.snip-header__user-text {
-  /* visibility: hidden; */
-}
-.aa {
-  visibility: visible!important;
-}
-.snip-header__user-text a {
-  visibility: visible;
-}
-
 .snip-layout .snip-header__continue {
   display: block!important;
   right: 40px;
@@ -61,4 +50,26 @@
 }
 #snipcart-cartitems-continue-top {
   visibility: hidden;
+}
+.snipcart-step #snipcart-actions {
+  /* display: none!important; */
+}
+#snipcart-actions .js-next{
+  font-size: 0;
+}
+#snipcart-actions .js-next::after{
+  padding: 5px 10px;
+  font-size: 16px;
+  content: 'continue';
+}
+.snip-header__user p{
+  font-size: 0;
+}
+.snip-header__user p a{
+  font-size: 14px;
+}
+.snip-header__user p::before{
+  padding: 5px 10px;
+  font-size: 16px;
+  content: 'Signed-in as';
 }

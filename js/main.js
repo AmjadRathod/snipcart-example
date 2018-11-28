@@ -10,6 +10,8 @@ $(document).ready(function(){
     $(user_logout).insertBefore($("#snipcart-header"));
     var user_name = $("#user-profile-infoo").html();
     $(user_name).insertBefore($("#snipcart-header"));
+    var continue_btn = $("#continue_btn").html();
+    $(continue_btn).insertBefore($("#snipcart-footer"));
   });
   Snipcart.execute('bind', 'cart.opened', function() {
     Snipcart.execute('unbind', 'cart.opened');
@@ -17,7 +19,4 @@ $(document).ready(function(){
     var user_pro = $("#user-profile-info").html();
     $(user_pro).insertBefore($("#snipcart-header"));
   });
-Snipcart.api.configure('show_continue_shopping', false);
-  $("#snipcart-header-total").css('display', 'none!important');
-  $(".snip-quantity-trigger__btn .snip-quantity-trigger__btn--add").css('display', 'none!important');
 });
