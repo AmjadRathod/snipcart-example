@@ -123,11 +123,11 @@
   padding: 5px 20px;
   font-size: 16px;
   content: '<<  Go Back';
-  color: yellow!important;
-  background-color: brown!important;
 }
 #snipcart-previous{
   font-size: 0;
+  color: yellow!important;
+  background-color: brown!important;
 }
 .snip-form__container--checkbox label::before {
   padding: 5px 20px;
