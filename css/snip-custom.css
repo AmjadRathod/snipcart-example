@@ -51,7 +51,9 @@
 #snipcart-actions .js-next::before {
   padding: 5px 20px;
   font-size: 16px;
-  content: 'continue';
+  content: 'continue >>';
+  color: yellow!important;
+  background-color: brown!important;
 }
 #snipcart-actions .js-next {
   font-size: 0;
@@ -59,7 +61,9 @@
 #snipcart-next::before {
   padding: 5px 20px;
   font-size: 16px;
-  content: 'DELIVERY';
+  content: 'DELIVERY >>';
+  color: yellow!important;
+  background-color: blue!important;
 }
 #snipcart-next {
   font-size: 0;
@@ -86,7 +90,9 @@
 #snipcart-cartitems-continue-top::before {
   padding: 5px 20px;
   font-size: 16px;
-  content: 'Add another Order';
+  content: '<< Add another Order';
+  color: yellow!important;
+  background-color: brown!important;
 }
 #snipcart-cartitems-continue-top {
   font-size: 0;
