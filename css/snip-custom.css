@@ -48,54 +48,62 @@
 .snip-btn-any {
   visibility: visible!important;
 }
-#snipcart-actions .js-next::before{
+#snipcart-actions .js-next::before {
   padding: 5px 20px;
   font-size: 16px;
   content: 'continue';
 }
-#snipcart-actions .js-next{
+#snipcart-actions .js-next {
   font-size: 0;
 }
-#snipcart-next::before{
+#snipcart-next::before {
   padding: 5px 20px;
   font-size: 16px;
   content: 'continue';
 }
-#snipcart-next{
+#snipcart-next {
   font-size: 0;
 }
-#snipcart-paymentmethod-pay::before{
+#snipcart-paymentmethod-pay::before {
   padding: 5px 20px;
   font-size: 16px;
-  content: 'Place Oreder 2';
+  content: 'Place Oreder';
 }
-#snipcart-paymentmethod-pay{
+#snipcart-paymentmethod-pay {
   font-size: 0;
 }
-.snip-header__user p{
+.snip-header__user p {
   font-size: 0;
 }
-.snip-header__user p a{
+.snip-header__user p a {
   font-size: 14px;
 }
-.snip-header__user p::before{
+.snip-header__user p::before {
   padding: 5px 20px;
   font-size: 16px;
   content: 'Signed-in as';
 }
-#snipcart-cartitems-continue-top::before{
+#snipcart-cartitems-continue-top::before {
   padding: 5px 20px;
   font-size: 16px;
   content: 'Add another Order';
 }
-#snipcart-cartitems-continue-top{
+#snipcart-cartitems-continue-top {
   font-size: 0;
 }
-#snipcart-previous::before{
+#snipcart-previous::before {
   padding: 5px 20px;
   font-size: 16px;
   content: 'Go Back';
 }
 #snipcart-previous{
+  font-size: 0;
+}
+.snip-form__container--checkbox label::before {
+  padding: 5px 20px;
+  font-size: 16px;
+  content: 'DELIVERY ADDRESS same as INVOICE ADDRESS';
+}
+.snip-form__container--checkbox label {
   font-size: 0;
 }
