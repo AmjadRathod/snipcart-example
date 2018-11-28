@@ -12,6 +12,8 @@ $(document).ready(function(){
     $(user_name).insertBefore($("#snipcart-header"));
     var continue_btn = $("#continue_btn").html();
     $(continue_btn).insertBefore($("#snipcart-footer"));
+    var site_logo = $("#site-logo").html();
+    $(site_logo).insertBefore($("#snipcart-title"));
   });
   Snipcart.execute('bind', 'cart.opened', function() {
     Snipcart.execute('unbind', 'cart.opened');
