@@ -56,6 +56,14 @@
 #snipcart-actions .js-next{
   font-size: 0;
 }
+#snipcart-next::before{
+  padding: 5px 20px;
+  font-size: 16px;
+  content: 'continue';
+}
+#snipcart-next{
+  font-size: 0;
+}
 .snip-header__user p{
   font-size: 0;
 }
