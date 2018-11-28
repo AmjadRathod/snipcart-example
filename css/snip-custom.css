@@ -17,6 +17,37 @@
 .snip-layout .snip-header__total {
   display: none!important;
 } */
+.logout-user {
+  position: absolute;
+  top: 11px;
+  right: -80px;
+}
+/* sub total */
+.snip-layout .snip-header__total {
+  background: none!important;
+  color: #000!important;
+}
+.snip-layout .snip-header__total-label {
+  color: #000!important;
+  font-size: 0;
+}
+.snip-layout .snip-header__total-label::before {
+  font-size: 14px;
+  content: 'ORDER TOTAL:';
+}
+@media only screen and (min-width: 48em)
+{
+  .snip-layout .snip-header__total {
+    position: absolute;
+    bottom: -225px;
+    right: 135px;
+  }
+}
+#snipcart-amount {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 10px 0;
+}
 .snip-table__cell--center {
   font-size: 0!important
 }
