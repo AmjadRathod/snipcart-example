@@ -17,9 +17,12 @@ $(document).ready(function(){
     var user_pro = $("#user-profile-info").html();
     $(user_pro).insertBefore($("#snipcart-header"));
   });
+  Snipcart.subscribe('page.changed', function (page) {
+    console.log(page);
+  });
   Snipcart.subscribe('cart.ready', function (data) {
-    console.log(data);
-});
+    console.log('hi');
+  });
   $('#dvDemo').attr('id', 'dvDemoNew');
   $("#snipcart-paymentmethod-pay").click(function(){
     console.log("hi");
