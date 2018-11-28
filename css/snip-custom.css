@@ -107,3 +107,11 @@
 .snip-form__container--checkbox label {
   font-size: 0;
 }
+/*  */
+.snip-layout .snip-product__remove::before {
+  font-size: 0;
+}
+.snip-layout .snip-product__remove::after {
+  font-size: 14px;
+  content: 'Remove';
+}
