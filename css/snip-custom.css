@@ -26,6 +26,9 @@
 #snipcart-items-header tr th:nth-child(4) {
   font-size: 0!important;
 }
+.snip-table__item td:nth-child(3) {
+  visibility: hidden;
+}
 /* table bordar */
 .snip-layout .snip-table__header {
   border-bottom: solid 3px;
