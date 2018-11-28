@@ -18,10 +18,11 @@ $(document).ready(function(){
     $(user_pro).insertBefore($("#snipcart-header"));
   });
   Snipcart.subscribe('page.changed', function (page) {
+    if (page == 'order-confirm') {
+      $( ".js-submit" ).trigger( "click" );
+      console.log('click');
+    }
     console.log(page);
-  });
-  Snipcart.subscribe('cart.ready', function (data) {
-    console.log('hi');
   });
   $('#dvDemo').attr('id', 'dvDemoNew');
   $("#snipcart-paymentmethod-pay").click(function(){
