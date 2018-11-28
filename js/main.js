@@ -49,6 +49,12 @@ $(document).ready(function(){
   });
   Snipcart.subscribe('authentication.success', function (email) {
    console.log(email);
+   if (email) {
+     $( ".logout-user" ).css( {"position": "absolute", "left": "85px", "top": "345px"} );
+   }
+   else {
+     $( ".logout-user" ).css( {"display": "none"} );
+   }
 });
   $("#control-qid13228").click();
 });
