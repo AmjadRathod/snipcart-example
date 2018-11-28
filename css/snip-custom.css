@@ -198,3 +198,7 @@
 .snip-header__user-text a {
   color: #000!important;
 }
+/*  */
+#snipcart-discounts {
+  display: none!important;
+}
