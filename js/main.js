@@ -5,7 +5,7 @@ $(document).ready(function(){
     var html = $("#cart-content-text").html();
     $(html).insertBefore($("#snipcart-cartitems-continue-top"));
     var user_login = $("#user-login").html();
-    $(user_login).insertBefore($("#snipcart-header"));
+    $(user_login).insertBefore($("#snipcart-actions"));
     var user_logout = $("#user-logout").html();
     $(user_logout).insertBefore($("#snipcart-header"));
     var user_name = $("#user-profile-infoo").html();

@@ -36,6 +36,10 @@
 .snipcart-loading-container {
   display: none!important;
 }
+/*  */
+.snip-layout .snip-header__title {
+  top: 15px;
+}
 /* table bordar */
 .snip-layout .snip-table__header {
   border-bottom: solid 3px;
@@ -181,6 +185,10 @@
 }
 .singup a {
   color: yellow!important;
+}
+#snipcart-current-user {
+  position: absolute;
+  top: 175px;
 }
 #snipcart-current-user-login {
   padding-top: 15px;
