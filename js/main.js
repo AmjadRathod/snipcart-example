@@ -24,6 +24,10 @@ $(document).ready(function(){
       $( ".js-submit" ).trigger( "click" );
       console.log('click');
     }
+    if (page == 'billing-address') {
+      $( "#snipcart-current-user" ).css( {"left": "unset", "right": "0", "top": "0"} );
+      console.log('click');
+    }
     console.log(page);
   });
   $('#dvDemo').attr('id', 'dvDemoNew');
