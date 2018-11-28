@@ -129,6 +129,14 @@
   color: yellow!important;
   background-color: brown!important;
 }
+/*  */
+.snipcart-step {
+  padding-top: 25px;
+}
+/*  */
+.snip-layout .snip-header__user-text {
+  max-width: 100%!important;
+}
 .snip-form__container--checkbox label::before {
   padding: 5px 20px;
   font-size: 12px;
@@ -190,7 +198,7 @@
 }
 #snipcart-current-user {
   position: absolute;
-  top: 90px;
+  top: 75px;
 }
 /* add_order */
 #snipcart-cartitems-continue-top {
