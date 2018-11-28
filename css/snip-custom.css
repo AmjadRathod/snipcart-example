@@ -168,6 +168,11 @@
   padding-top: 20px;
   content: 'YOUR CART ';
 }
+/* chk box */
+.snipcart-checkbox-field {
+  position: absolute;
+  top: 172px;
+}
 #snipcart-title::after {
   font-size: 32px;
   padding-top: 20px;
