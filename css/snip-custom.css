@@ -19,8 +19,8 @@
 } */
 .logout-user {
   position: absolute;
-  top: 11px;
-  right: -80px;
+  top: 345px;
+  left: 85px;
 }
 /* sub total */
 .snip-layout .snip-header__total {
