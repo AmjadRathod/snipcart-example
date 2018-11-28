@@ -170,6 +170,10 @@
   font-size: 0;
   color: black;
 }
+/* item */
+#snipcart-sub-content {
+  padding-top: 25px;
+}
 /* cart background */
 .snip-layout .snip-layout__main-container {
   background: #fdf3f3;
