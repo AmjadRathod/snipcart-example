@@ -83,3 +83,10 @@
 #snipcart-previous{
   font-size: 0;
 }
+.snipcart-checkbox-field label::before {
+  font-size: 14px;
+  content: 'DELIVERY ADDRESS same as INVOICE ADDRESS'
+}
+.snipcart-checkbox-field label::before {
+  font-size: 0;
+}
