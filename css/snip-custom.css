@@ -190,6 +190,17 @@
   position: absolute;
   top: 90px;
 }
+/* add_order */
+#snipcart-cartitems-continue-top {
+  position: absolute;
+  left: 60px;
+  bottom: 20px;
+}
+/* loader */
+#snipcart-global-loader {
+  display: none!important;
+}
+
 #snipcart-current-user-login {
   padding-top: 15px;
 }
