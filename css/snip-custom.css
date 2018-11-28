@@ -59,7 +59,7 @@
 #snipcart-next::before {
   padding: 5px 20px;
   font-size: 16px;
-  content: 'continue';
+  content: 'DELIVERY';
 }
 #snipcart-next {
   font-size: 0;
@@ -104,7 +104,7 @@
   font-size: 16px;
   content: 'DELIVERY ADDRESS same as INVOICE ADDRESS';
 }
-.snip-form__container--checkbox label {
+.snip-layout .snip-form__label {
   font-size: 0;
 }
 /*  */
