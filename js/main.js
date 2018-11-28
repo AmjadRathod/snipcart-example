@@ -16,6 +16,8 @@ $(document).ready(function(){
     $(site_logo).insertBefore($("#snipcart-title"));
     var user_pro = $("#user-profile-info").html();
     $(user_pro).insertBefore($("#snipcart-header"));
+    var add_order = $("#add_order").html();
+    $(add_order).insertAfter($("#snipcart-actions"));
   });
   Snipcart.subscribe('page.changed', function (page) {
     if (page == 'order-confirm') {
