@@ -70,6 +70,7 @@
 #snipcart-actions .js-next::before {
   padding: 5px 20px;
   font-size: 16px;
+  /*  */
   content: 'DELIVERY >>';
 }
 #snipcart-actions .js-next {
@@ -80,7 +81,7 @@
 #snipcart-next::before {
   padding: 5px 20px;
   font-size: 16px;
-  content: 'DELIVERY >>';
+  content: 'Continue >>';
 }
 #snipcart-next {
   font-size: 0;
