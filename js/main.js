@@ -29,6 +29,7 @@ $(document).ready(function(){
       $( "#snipcart-header-total" ).css( {"display": "none"} );
       $( ".snipcart-user-logout" ).css( {"display": "none"} );
       $( "#snipcart-current-user .logout-user" ).css( {"display": "none"} );
+      $( ".logout-user" ).css( {"display": "none"} );
       $( "#snip-header__title:before" ).css( {"content": "Where", "text-transform": "capitalize"} );
       $( "#snip-header__title:after" ).css( {"content": "do we deliver"} );
     }
@@ -50,9 +51,11 @@ $(document).ready(function(){
     console.log("hi");
   });
   Snipcart.subscribe('authentication.success', function (email) {
-   console.log(email !== null && email !== undefined);
    if (email) {
-     $( ".logout-user" ).css( {"position": "absolute", "left": "85px", "top": "345px"} );
+     console.log(email);
+   }
+   if (email !== null && email !== undefined) {
+     $( ".logout-user" ).css( {"position": "absolute", "left": "285px", "top": "85px"} );
      $( ".singup" ).css( {"display": "none"} );
    }
    else {
