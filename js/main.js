@@ -14,10 +14,6 @@ $(document).ready(function(){
     $(continue_btn).insertBefore($("#snipcart-footer"));
     var site_logo = $("#site-logo").html();
     $(site_logo).insertBefore($("#snipcart-title"));
-    var tbl_hr_top = $("#tbl-hr-top").html();
-    $(tbl_hr_top).insertBefore($("#snipcart-items-header"));
-    var tbl_hr_bottom = $("#tbl-hr-bottom").html();
-    $(tbl_hr_bottom).insertAfter($("#snipcart-items-header"));
   });
   Snipcart.execute('bind', 'cart.opened', function() {
     Snipcart.execute('unbind', 'cart.opened');
