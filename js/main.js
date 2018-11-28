@@ -7,7 +7,7 @@ $(document).ready(function(){
     var user_login = $("#user-login").html();
     $(user_login).insertBefore($("#snipcart-actions"));
     var user_logout = $("#user-logout").html();
-    $(user_logout).insertBefore($(".snip-header__user-mail"));
+    $(user_logout).insertAfter($(".snip-header__user-mail"));
     var user_name = $("#user-profile-infoo").html();
     $(user_name).insertBefore($("#snipcart-header"));
     var continue_btn = $("#continue_btn").html();

@@ -106,7 +106,7 @@
 .snip-header__user p::before {
   padding: 5px 20px;
   font-size: 16px;
-  content: 'Signed-in as';
+  content: 'Signed-in as:';
   color: black;
 }
 #snipcart-cartitems-continue-top::before {
