@@ -108,6 +108,10 @@
   font-size: 0;
 }
 /*  */
+.snip-layout .snip-ico--close:before {
+  content: '';
+  font-size: 0;
+}
 .snip-layout .snip-product__remove::before {
   font-size: 0;
 }
