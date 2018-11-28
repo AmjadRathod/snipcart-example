@@ -26,6 +26,9 @@
 #snipcart-items-header tr th:nth-child(4) {
   font-size: 0!important;
 }
+#snipcart-items-header tr th:nth-child(6) {
+  content: 'Remove';
+}
 .snip-table__item td:nth-child(3) {
   visibility: hidden;
 }
