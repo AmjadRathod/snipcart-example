@@ -146,7 +146,7 @@
 .snip-layout .snip-layout__main-container {
   background: #fdf3f3;
   padding-left: 60px;
-  padding-right: 30px; 
+  padding-right: 30px;
 }
 .snip-layout .snip-header__user {
   background: none;
@@ -174,4 +174,7 @@
   font-size: 44px;
   color: #84429E;
   text-align: left;
+}
+.tbl-hr {
+  background: red;
 }
