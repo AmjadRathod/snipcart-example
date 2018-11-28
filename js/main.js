@@ -21,7 +21,7 @@ $(document).ready(function(){
   });
   $('#dvDemo').attr('id', 'dvDemoNew');
   $("#snipcart-paymentmethod-pay").click(function(){
-    alert("The pplace order btn clicked.");
+    console.log("hi");
   });
   $("#control-qid13228").click();
 });
