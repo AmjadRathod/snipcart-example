@@ -26,7 +26,10 @@
 #snipcart-items-header tr th:nth-child(4) {
   font-size: 0!important;
 }
-#snipcart-items-header tr th:nth-child(6) {
+#snipcart-items-header tr th:nth-child(6)::before {
+  content: 'Remove';
+}
+#snipcart-items-header tr th:nth-child(5)::before {
   content: 'Remove';
 }
 .snip-table__item td:nth-child(3) {
