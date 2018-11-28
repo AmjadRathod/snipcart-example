@@ -11,12 +11,12 @@
 .snip-layout .snip-footer {
   display: none!important;
 }
-.snip-header__total {
+/* .snip-header__total {
   display: none!important;
 }
 .snip-layout .snip-header__total {
   display: none!important;
-}
+} */
 .snip-table__cell--center {
   font-size: 0!important
 }
