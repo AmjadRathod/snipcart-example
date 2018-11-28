@@ -163,8 +163,16 @@
 }
 #snipcart-title::before {
   font-size: 32px;
+  font-weight: bold;
   padding-top: 20px;
-  content: 'YOUR CART for approval';
+  content: 'YOUR CART';
+}
+#snipcart-title::after {
+  font-size: 32px;
+  padding-top: 20px;
+  text-transform: lowercase!important;
+  font-weight: bold;
+  content: 'for approval';
 }
 #snipcart-title {
   font-size: 0;
