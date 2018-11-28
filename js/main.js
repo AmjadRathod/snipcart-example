@@ -30,5 +30,8 @@ $(document).ready(function(){
   $("#snipcart-paymentmethod-pay").click(function(){
     console.log("hi");
   });
+  Snipcart.subscribe('authentication.fail', function (email) {
+   console.log(email);
+  });
   $("#control-qid13228").click();
 });
