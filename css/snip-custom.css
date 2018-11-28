@@ -94,7 +94,9 @@
 #snipcart-previous::before {
   padding: 5px 20px;
   font-size: 16px;
-  content: 'Go Back';
+  content: '<<  Go Back';
+  color: yellow!important;
+  background-color: brown!important;
 }
 #snipcart-previous{
   font-size: 0;
