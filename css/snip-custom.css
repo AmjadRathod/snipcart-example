@@ -48,11 +48,11 @@
 .snip-btn-any {
   visibility: visible!important;
 }
-#snipcart-actions .js-next{
+#snipcart-next{
   font-size: 0;
 }
-#snipcart-actions .js-next::after{
-  padding: 5px 10px;
+#snipcart-next::after{
+  padding: 5px 20px;
   font-size: 16px;
   content: 'continue';
 }
@@ -63,12 +63,12 @@
   font-size: 14px;
 }
 .snip-header__user p::before{
-  padding: 5px 10px;
+  padding: 5px 20px;
   font-size: 16px;
   content: 'Signed-in as';
 }
 #snipcart-cartitems-continue-top::before{
-  padding: 5px 10px;
+  padding: 5px 20px;
   font-size: 16px;
   content: 'Add another Order';
 }
@@ -76,7 +76,7 @@
   font-size: 0;
 }
 #snipcart-previous::before{
-  padding: 5px 10px;
+  padding: 5px 20px;
   font-size: 16px;
   content: 'Go Back';
 }
