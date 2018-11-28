@@ -51,7 +51,7 @@
 #snipcart-next{
   font-size: 0;
 }
-#snipcart-next::after{
+#snipcart-next::before{
   padding: 5px 20px;
   font-size: 16px;
   content: 'continue';
