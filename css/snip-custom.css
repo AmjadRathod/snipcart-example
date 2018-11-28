@@ -88,6 +88,7 @@
   padding: 5px 20px;
   font-size: 16px;
   content: 'Signed-in as';
+  color: black;
 }
 #snipcart-cartitems-continue-top::before {
   padding: 5px 20px;
@@ -138,6 +139,7 @@
 }
 #snipcart-title {
   font-size: 0;
+  color: black;
 }
 /* cart background */
 .snip-layout .snip-layout__main-container {
@@ -151,4 +153,8 @@
 }
 .snip-layout .snip-steps {
   visibility: hidden;
+}
+.singup {
+  width: fit-content;
+  border-radius: 10px;
 }
