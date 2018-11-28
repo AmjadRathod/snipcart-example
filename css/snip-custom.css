@@ -52,21 +52,21 @@
   padding: 5px 20px;
   font-size: 16px;
   content: 'continue >>';
-  color: yellow!important;
-  background-color: brown!important;
 }
 #snipcart-actions .js-next {
   font-size: 0;
+  color: yellow!important;
+  background-color: brown!important;
 }
 #snipcart-next::before {
   padding: 5px 20px;
   font-size: 16px;
   content: 'DELIVERY >>';
-  color: yellow!important;
-  background-color: blue!important;
 }
 #snipcart-next {
   font-size: 0;
+  color: yellow!important;
+  background-color: blue!important;
 }
 #snipcart-paymentmethod-pay::before {
   padding: 5px 20px;
@@ -75,6 +75,8 @@
 }
 #snipcart-paymentmethod-pay {
   font-size: 0;
+  background-color: orange!important;
+  color: yellow!important;
 }
 .snip-header__user p {
   font-size: 0;
@@ -126,4 +128,27 @@
 .snip-layout .snip-product__remove::after {
   font-size: 14px;
   content: 'Remove';
+}
+.singup {
+  background-color: brown!important;
+  color: yellow!important;
+}
+#snipcart-title::before {
+  content: 'YOUR CART for approval';
+}
+#snipcart-title {
+  font-size: 0;
+}
+/* cart background */
+.snip-layout .snip-layout__main-container {
+  background: #fdf3f3;
+}
+.snip-layout .snip-header__user {
+  background: none;
+}
+.snip-layout .snip-header {
+  background: none;
+}
+.snip-layout .snip-steps {
+  visibility: hidden;
 }
