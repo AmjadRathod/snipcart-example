@@ -48,13 +48,13 @@
 .snip-btn-any {
   visibility: visible!important;
 }
-#snipcart-next{
-  font-size: 0;
-}
-#snipcart-next::before{
+#snipcart-actions .js-next::before{
   padding: 5px 20px;
   font-size: 16px;
   content: 'continue';
+}
+#snipcart-actions .js-next{
+  font-size: 0;
 }
 .snip-header__user p{
   font-size: 0;
@@ -87,6 +87,6 @@
   font-size: 14px;
   content: 'DELIVERY ADDRESS same as INVOICE ADDRESS'
 }
-.snipcart-checkbox-field label::before {
+.snipcart-checkbox-field label {
   font-size: 0;
 }
