@@ -7,7 +7,7 @@ $(document).ready(function(){
     var user_login = $("#user-login").html();
     $(user_login).insertBefore($("#snipcart-actions"));
     var user_logout = $("#user-logout").html();
-    $(user_logout).insertAfter($(".snip-header__user-mail"));
+    $(user_logout).insertAfter($(".snip-header__user-text"));
     var user_name = $("#user-profile-infoo").html();
     $(user_name).insertBefore($("#snipcart-header"));
     var continue_btn = $("#continue_btn").html();
@@ -26,7 +26,20 @@ $(document).ready(function(){
     }
     if (page == 'billing-address') {
       $( "#snipcart-current-user" ).css( {"left": "unset", "right": "0", "top": "0"} );
-      console.log('click');
+      $( "#snipcart-current-user .logout-user" ).css( {"display": "none"} );
+      $( "#snip-header__title:before" ).css( {"content": "Where", "text-transform": "capitalize"} );
+      $( "#snip-header__title:after" ).css( {"content": "do we deliver"} );
+    }
+    if (page == 'shipping-address') {
+      $( "#snip-header__title:before" ).css( {"content": "Invoice Address", "text-transform": "capitalize"} );
+    }
+    if (page == 'payment-method') {
+      $( "#snip-header__title:before" ).css( {"content": "payment method", "text-transform": "capitalize"} );
+    }
+    if (page == 'cart-content') {
+      $( "#snipcart-current-user" ).css( {"left": "28px", "right": "unset", "top": "75px"} );
+      $( "#snip-header__title:before" ).css( {"content": "YOUR CART"} );
+      $( "#snip-header__title:after" ).css( {"content": "for approval"} );
     }
     console.log(page);
   });
