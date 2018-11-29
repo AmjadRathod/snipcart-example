@@ -75,6 +75,8 @@ $(document).ready(function(){
           $('#snipcart-current-user').css("display", "none");
         }
         else {
+          var add_logout = $("#logout_user").html();
+          $(add_logout).insertAfter($(".snip-header__user-text"));
           $('#snipcart-current-user-login').css("display", "none");
           $('#snipcart-current-user').css("display", "block");
         }
