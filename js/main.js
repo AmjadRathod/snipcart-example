@@ -41,13 +41,13 @@ $(document).ready(function(){
     $(add_order).insertAfter($("#snipcart-actions"));
   });
   $(".snipcart-user-profile").click(function(){
-    $(this).hide();
-    $('.logout-user').show();
+    $(this).css({"display": "none"});
+    $('.logout-user').css("display": "block");
   });
-  $('.logout-user').hide();
+  $('.logout-user').css("display": "none");
   $(".logout-user").click(function(){
-    $(this).hide();
-    $('.snipcart-user-profile').show();
+    $(this).css("display": "none");
+    $('.snipcart-user-profile').css("display": "block");
   });
   Snipcart.subscribe('page.changed', function (page) {
     if (page == 'order-confirm') {
