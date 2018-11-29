@@ -40,8 +40,7 @@ $(document).ready(function(){
         var add_order = $("#add_order").html();
         $(add_order).insertAfter($("#snipcart-actions"));
       });
-
-      console.log("bind");
+      $('#snipcart-actions').insertBefore('#snipcart-header-total');
       $( "#snipcart-current-user" ).css( {"left": "28px", "right": "unset", "top": "75px"} );
       $( "#snipcart-header-total" ).css( {"bottom": "-275px", "right": "135"} );
       $( "#snip-header__title:before" ).css( {"content": "YOUR CART"} );

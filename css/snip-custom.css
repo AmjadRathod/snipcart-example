@@ -35,14 +35,6 @@
   font-size: 14px;
   content: 'ORDER TOTAL:';
 }
-@media only screen and (min-width: 48em)
-{
-  .snip-layout .snip-header__total {
-    position: absolute;
-    bottom: -275px;
-    right: 135px;
-  }
-}
 #snipcart-amount {
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
@@ -283,9 +275,6 @@
   font-size: 44px!important;
   color: #84429E;
   text-align: left;
-}
-.tbl-hr {
-  background: red;
 }
 .snip-layout .snip-loader--bar.js-hidden {
   background-color: green!important;
