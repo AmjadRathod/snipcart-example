@@ -40,6 +40,7 @@ $(document).ready(function(){
       $( "#snipcart-current-user .logout-user" ).css( {"display": "none"} );
       $( ".logout-user" ).css( {"display": "none"} );
       $( "#snipcart-title::before" ).css( {"content": "Where", "text-transform": "capitalize"} );
+      $( "#snipcart-title" ).text('Where do we deliver');
       $( "#snipcart-title::after" ).css( {"content": "do we deliver"} );
     }
     if (page == 'shipping-address') {
