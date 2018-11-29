@@ -27,8 +27,7 @@ $(document).ready(function(){
         $( ".site_logo" ).remove();
         $( ".singup" ).remove();
         Snipcart.execute('unbind', 'cart.opened');
-        var html = $("#cart-content-text").html();
-        $(html).insertBefore($("#snipcart-cartitems-continue-top"));
+        $('#snipcart-cartitems-continue-top').insertBefore($(".js-next"));
         var user_login = $("#user-login").html();
         $(user_login).insertBefore($("#snipcart-actions"));
         var user_logout = $("#user-logout").html();
