@@ -287,3 +287,9 @@
   display: none!important;
 }
 /*  */
+#snipcart-header-total {
+  position: absolute;
+  right: 135px;
+  text-align: right;
+  display: block;
+}

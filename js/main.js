@@ -42,7 +42,6 @@ $(document).ready(function(){
       });
       $('#snipcart-header-total').insertBefore('#snipcart-actions');
       $( "#snipcart-current-user" ).css( {"left": "28px", "right": "unset", "top": "75px"} );
-      $( "#snipcart-header-total" ).css( {"bottom": "-275px", "right": "135"} );
       $( "#snip-header__title:before" ).css( {"content": "YOUR CART"} );
       $( "#snip-header__title:after" ).css( {"content": "for approval"} );
     }
