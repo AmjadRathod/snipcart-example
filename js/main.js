@@ -5,6 +5,11 @@ $(document).ready(function(){
       $( ".site_logo" ).remove();
       $( ".singup" ).remove();
       Snipcart.execute('unbind', 'cart.opened');
+      $('#snipcart-header-total').insertBefore('#snipcart-actions');
+      $( "#snipcart-current-user" ).css( {"left": "28px", "right": "unset", "top": "75px"} );
+      $( "#snipcart-title::before" ).css( {"content": "YOUR CART"} );
+      $( "#snipcart-title::after" ).css( {"content": "for approval"} );
+
       $('#snipcart-cartitems-continue-top').insertBefore($(".js-next"));
       var user_login = $("#user-login").html();
       $(user_login).insertBefore($("#snipcart-actions"));
@@ -55,11 +60,7 @@ $(document).ready(function(){
       $( ".site_logo" ).remove();
       $( ".singup" ).remove();
 
-      $('#snipcart-header-total').insertBefore('#snipcart-actions');
-      $( "#snipcart-current-user" ).css( {"left": "28px", "right": "unset", "top": "75px"} );
-      $( "#snipcart-title::before" ).css( {"content": "YOUR CART"} );
-      $( "#snipcart-title::after" ).css( {"content": "for approval"} );
-    }
+          }
     console.log(page);
   });
   $('#dvDemo').attr('id', 'dvDemoNew');
