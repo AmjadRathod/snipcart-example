@@ -21,6 +21,7 @@ $(document).ready(function(){
       $( "#snipcart-title::before" ).css( {"content": "payment method", "text-transform": "capitalize"} );
     }
     if (page == 'cart-content') {
+      location.reload(true);
       $( ".site_logo" ).remove();
       $( ".singup" ).remove();
       Snipcart.execute('bind', 'cart.opened', function() {
