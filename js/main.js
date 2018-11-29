@@ -43,6 +43,15 @@ $(document).ready(function(){
         $(user_pro).insertBefore($("#snipcart-header"));
         var add_order = $("#add_order").html();
         $(add_order).insertAfter($("#snipcart-actions"));
+        var user = $('.snip-header__user-mail').text();
+        if (user == "") {
+          $('#snipcart-current-user-login').css("display", "block");
+          $('#snipcart-current-user').css("display", "none");
+        }
+        else {
+          $('#snipcart-current-user-login').css("display", "none");
+          $('#snipcart-current-user').css("display", "block");
+        }
       });
       $('#snipcart-header-total').insertBefore('#snipcart-actions');
       $( "#snipcart-current-user" ).css( {"left": "28px", "right": "unset", "top": "75px"} );
