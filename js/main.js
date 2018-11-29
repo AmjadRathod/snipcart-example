@@ -11,18 +11,19 @@ $(document).ready(function(){
       $( ".snipcart-user-logout" ).css( {"display": "none"} );
       $( "#snipcart-current-user .logout-user" ).css( {"display": "none"} );
       $( ".logout-user" ).css( {"display": "none"} );
-      $( "#snip-header__title::before" ).css( {"content": "Where", "text-transform": "capitalize"} );
-      $( "#snip-header__title::after" ).css( {"content": "do we deliver"} );
+      $( "#snipcart-title:before" ).css( {"content": "Where", "text-transform": "capitalize"} );
+      $( "#snipcart-title:after" ).css( {"content": "do we deliver"} );
     }
     if (page == 'shipping-address') {
-      $( "#snip-header__title:before" ).css( {"content": "Invoice Address", "text-transform": "capitalize"} );
+      $( "#snipcart-title:before" ).css( {"content": "Invoice Address", "text-transform": "capitalize"} );
     }
     if (page == 'payment-method') {
-      $( "#snip-header__title::before" ).css( {"content": "payment method", "text-transform": "capitalize"} );
+      $( "#snipcart-title:before" ).css( {"content": "payment method", "text-transform": "capitalize"} );
     }
     if (page == 'cart-content') {
       $( ".site_logo" ).remove();
       Snipcart.execute('bind', 'cart.opened', function() {
+        $( ".site_logo" ).remove();
         Snipcart.execute('unbind', 'cart.opened');
         var html = $("#cart-content-text").html();
         $(html).insertBefore($("#snipcart-cartitems-continue-top"));
@@ -43,8 +44,8 @@ $(document).ready(function(){
       });
       $('#snipcart-header-total').insertBefore('#snipcart-actions');
       $( "#snipcart-current-user" ).css( {"left": "28px", "right": "unset", "top": "75px"} );
-      $( "#snip-header__title:before" ).css( {"content": "YOUR CART"} );
-      $( "#snip-header__title:after" ).css( {"content": "for approval"} );
+      $( "#snipcart-title:before" ).css( {"content": "YOUR CART"} );
+      $( "#snipcart-title:after" ).css( {"content": "for approval"} );
     }
     console.log(page);
   });
