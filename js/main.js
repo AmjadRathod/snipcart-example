@@ -13,8 +13,6 @@ $(document).ready(function(){
       $(user_name).insertBefore($("#snipcart-header"));
       var continue_btn = $("#continue_btn").html();
       $(continue_btn).insertBefore($("#snipcart-footer"));
-      var site_logo = $("#site-logo").html();
-      $(site_logo).insertBefore($("#snipcart-title"));
       var user_pro = $("#user-profile-info").html();
       $(user_pro).insertBefore($("#snipcart-header"));
       var add_order = $("#add_order").html();
