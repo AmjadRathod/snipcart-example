@@ -11,14 +11,14 @@ $(document).ready(function(){
       $( ".snipcart-user-logout" ).css( {"display": "none"} );
       $( "#snipcart-current-user .logout-user" ).css( {"display": "none"} );
       $( ".logout-user" ).css( {"display": "none"} );
-      $( "#snip-header__title:before" ).css( {"content": "Where", "text-transform": "capitalize"} );
-      $( "#snip-header__title:after" ).css( {"content": "do we deliver"} );
+      $( "#snip-header__title::before" ).css( {"content": "Where", "text-transform": "capitalize"} );
+      $( "#snip-header__title::after" ).css( {"content": "do we deliver"} );
     }
     if (page == 'shipping-address') {
       $( "#snip-header__title:before" ).css( {"content": "Invoice Address", "text-transform": "capitalize"} );
     }
     if (page == 'payment-method') {
-      $( "#snip-header__title:before" ).css( {"content": "payment method", "text-transform": "capitalize"} );
+      $( "#snip-header__title::before" ).css( {"content": "payment method", "text-transform": "capitalize"} );
     }
     if (page == 'cart-content') {
       Snipcart.execute('bind', 'cart.opened', function() {
