@@ -53,6 +53,8 @@ $(document).ready(function(){
     if (page == 'cart-content') {
       $( ".site_logo" ).remove();
       $( ".singup" ).remove();
+      var site_logo = $("#site-logo").html();
+      $(site_logo).insertBefore($("#snipcart-title"));
       Snipcart.execute('bind', 'cart.opened', function() {
         Snipcart.execute('unbind', 'cart.opened');
         var user_login = $("#user-login").html();
