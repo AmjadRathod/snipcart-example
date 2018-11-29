@@ -64,10 +64,6 @@ $(document).ready(function(){
      $( ".singup" ).css( {"display": "none"} );
      console.log(email);
    }
-   else {
-     $( ".logout-user" ).css( {"display": "none"} );
-     console.log('hiii');
-   }
 });
   $("#control-qid13228").click();
 });
