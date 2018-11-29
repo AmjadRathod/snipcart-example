@@ -40,6 +40,15 @@ $(document).ready(function(){
     var add_order = $("#add_order").html();
     $(add_order).insertAfter($("#snipcart-actions"));
   });
+  $(".snipcart-user-profile").click(function(){
+    $(this).hide();
+    $('.logout-user').show();
+  });
+  $('.logout-user').hide();
+  $(".logout-user").click(function(){
+    $(this).hide();
+    $('.snipcart-user-profile').show();
+  });
   Snipcart.subscribe('page.changed', function (page) {
     if (page == 'order-confirm') {
       $( ".js-submit" ).trigger( "click" );
