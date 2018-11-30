@@ -132,7 +132,6 @@ $(document).ready(function(){
     if (page == 'cart-content') {
       $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user-login"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">I&#39;M MEMBER</span></a></div></div>');
       $(".snip-header__user-text").append('<a href="#" class="snipcart-user-logout">(logout/change)</a>');
-
       $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue">&lt;&lt; Add another Order</a>');
       $("#snipcart-items-list").last().append('<div id="snipcart-header-total" class="snip-header__total"><span class="snip-header__total-label">ORDER TOTAL:</span><span id="snipcart-amount"></span></div>');
       $('#snipcart-actions .js-next').text('DELIVERY >>');
