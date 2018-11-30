@@ -7,7 +7,7 @@
   text-align: left;
   font-size: 16px;
 }
-a.snipcart-user-profile {
+a.snipcart-user-profile-login {
   background: blue!important;
   color: yellow!important;
   padding: 10px 25px!important;
@@ -127,4 +127,7 @@ a.snipcart-user-profile {
   position: absolute;
   left: 220px;
   top: 10px;
+}
+#snipcart-previous {
+  background: brown!important;
 }
