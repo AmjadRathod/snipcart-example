@@ -134,3 +134,11 @@ a.snipcart-user-profile {
 .snipcart-user-logout {
   visibility: hidden;
 }
+/*  */
+.snip-header__user-text::after {
+  content: 'Signed-in as:';
+  font-size: 14px;
+}
+.snip-header__user-text {
+  font-size: 0;
+}
