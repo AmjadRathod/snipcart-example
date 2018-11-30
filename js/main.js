@@ -141,9 +141,9 @@ $(document).ready(function(){
     $('.sub-title').remove();
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     if (page == 'cart-content') {
-      $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue" style="display: block; top: 645px;">&lt;&lt; Add another Order</a>');
+      $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue">&lt;&lt; Add another Order</a>');
       $('#snipcart-show-discount-box').attr('id', 'newId');
-      $('#snipcart-cartitems-continue-top').css({"display": "block"});
+      // $('#snipcart-cartitems-continue-top').css({"display": "block"});
       // var snipcart_box_height = $('#snip-layout-cart-content').height();
       // $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
       // $('#snipcart-cartitems-continue-top').text('<< Add another Order');
