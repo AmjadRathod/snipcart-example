@@ -34,7 +34,7 @@
 /* remove discount */
 .sub-title {
   color: #000;
-  text-align: left;
+  text-align: left!important;
   margin-left: 40px;
   font-size: 22px;
 }

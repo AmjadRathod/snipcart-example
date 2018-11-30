@@ -111,22 +111,22 @@ document.addEventListener('snipcart.ready', function() {
 });
 Snipcart.subscribe('cart.opened', function() {
     console.log('Snipcart popup is visible 2');
-    var snipcart_box_height = $('#snip-layout-cart-content').height();
-    $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
-    $('#snipcart-cartitems-continue-top').text('<< Add another Order');
+    // var snipcart_box_height = $('#snip-layout-cart-content').height();
+    // $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
+    // $('#snipcart-cartitems-continue-top').text('<< Add another Order');
     // $('#snipcart-items').append($("#snipcart-header-total"));
 });
 Snipcart.subscribe('item.removed', function (item) {
-  var snipcart_box_height = $('#snip-layout-cart-content').height();
-  $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
+  // var snipcart_box_height = $('#snip-layout-cart-content').height();
+  // $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
 });
 $("#snipcart-items nip-product__remove").click(function(){
-  var snipcart_box_height = $('#snip-layout-cart-content').height();
-  $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
+  // var snipcart_box_height = $('#snip-layout-cart-content').height();
+  // $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
 });
 $(document).ready(function(){
   var checkout = Snipcart.appView.getActiveStep();
-  $('#snipcart-show-discount-box').attr('id', 'newId');
+  // $('#snipcart-show-discount-box').attr('id', 'newId');
   if (checkout == 'checkout') {
     Snipcart.appView.setTitle('Reliaprint.co.uk');
     Snipcart.appView.hideSteps();
@@ -141,11 +141,12 @@ $(document).ready(function(){
     $('.sub-title').remove();
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     if (page == 'cart-content') {
+      $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue" style="display: block; top: 645px;">&lt;&lt; Add another Order</a>');
       $('#snipcart-show-discount-box').attr('id', 'newId');
       $('#snipcart-cartitems-continue-top').css({"display": "block"});
-      var snipcart_box_height = $('#snip-layout-cart-content').height();
-      $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
-      $('#snipcart-cartitems-continue-top').text('<< Add another Order');
+      // var snipcart_box_height = $('#snip-layout-cart-content').height();
+      // $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
+      // $('#snipcart-cartitems-continue-top').text('<< Add another Order');
     }
     else {
       $('#snipcart-cartitems-continue-top').css({"display": "none"});
