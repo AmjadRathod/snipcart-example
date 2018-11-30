@@ -112,7 +112,8 @@ document.addEventListener('snipcart.ready', function() {
 Snipcart.subscribe('cart.opened', function() {
     console.log('Snipcart popup is visible 2');
     var snipcart_box_height = $('#snip-layout-cart-content').height();
-    $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55'px'});
+    $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
+    console.log(snipcart_box_height - 55);
     // $('#snipcart-items').append($("#snipcart-header-total"));
 });
 $(document).ready(function(){
