@@ -121,6 +121,9 @@ a.snipcart-user-profile {
 .snip-layout .snip-header__user-text .snip-header__user-mail {
   font-size: 14px;
 }
+.snip-quantity-trigger {
+  visibility: hidden;
+}
 #snipcart-current-user {
   position: relative!important;
   top: 100px;
