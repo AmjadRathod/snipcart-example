@@ -116,7 +116,7 @@ $(document).ready(function(){
     Snipcart.appView.hideSteps();
     Snipcart.appView.hideLoader();
     console.log('hiii');
-    $('#snipcart-header-total').append($("#snipcart-show-discount-box"));
+    $('#snipcart-show-discount-box').append($("#snipcart-header-total"));
   }
   Snipcart.subscribe('page.changed', function (page) {
     // if (page == 'cart-content') {

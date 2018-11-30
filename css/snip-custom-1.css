@@ -36,12 +36,7 @@
   display: none;
 }
 /* next - devlivery */
-#snipcart-actions .js-next::before {
-  padding: 5px 20px;
-  font-size: 16px;
-  /*  */
-  content: 'DELIVERY >>';
-}
+
 #snipcart-actions .js-next {
   font-size: 0;
   color: yellow!important;
