@@ -60,8 +60,8 @@
 }
 /* tbl had border */
 .snip-layout .snip-table__header {
-  border-bottom: solid 2px #eee;
-  border-top: solid 2px #eee;
+  border-bottom: solid 2px #666260;
+  border-top: solid 2px #666260;
 }
 /* continue_btn */
 #snipcart-cartitems-continue-top {
