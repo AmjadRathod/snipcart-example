@@ -117,7 +117,7 @@ $(document).ready(function(){
     Snipcart.appView.hideSteps();
     Snipcart.appView.hideLoader();
     console.log('hiii');
-    $('#snipcart-header-total').insertAfter($("#snipcart-discount"));
+    $('#snipcart-header-total').insertAfter($("#snipcart-items"));
   }
   Snipcart.subscribe('page.changed', function (page) {
     $('#snipcart-header-total').insertAfter($("#snipcart-discount"));
