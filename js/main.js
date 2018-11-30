@@ -162,6 +162,10 @@ $(document).ready(function(){
       $('.sub-title').text('Payment Method');
       $('.snip-product').css({"display": "none"});
     }
+    if (page == 'order-confirm') {
+      $( ".js-submit" ).trigger( "click" );
+      console.log('click');
+    }
       console.log(page);
   });
 });
