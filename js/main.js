@@ -141,6 +141,7 @@ $(document).ready(function(){
       $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
       $('#snipcart-next').text('Continue >>');
+      $('#snipcart-next').css({"background": "blue"});
       $('#snipcart-previous').css({"background": "blue", "color": "yellow"});
       $('.sub-title').text('Where do we deliver:');
     }
