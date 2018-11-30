@@ -130,6 +130,7 @@ $(document).ready(function(){
     $('.sub-title').remove();
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     if (page == 'cart-content') {
+      // Snipcart.settings.onlyAllowGuests = false;
       $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user-login"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">I&#39;M MEMBER</span></a></div></div>');
       $("#snipcart-header").append('<a href="#" class="snipcart-user-logout">(logout/change)</a>');
       $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue">&lt;&lt; Add another Order</a>');
@@ -137,6 +138,16 @@ $(document).ready(function(){
       $('#snipcart-actions .js-next').text('DELIVERY >>');
       var total = $('#snipcart-amount').text();
       $('#snipcart-items-list #snipcart-header-total #snipcart-amount').text(total);
+      $('.snip-header__user-text').text('Signed-in as:');
+      $( ".snipcart-user-profile" ).click(function() {
+        Snipcart.settings.onlyAllowGuests = false;
+      });
+      if (Snipcart.currentUser) {
+        $( ".snipcart-user-profile" ).css({"visibility": "hidden"});
+      }
+      else {
+        $( ".snipcart-user-profile" ).css({"visibility": "visible"});
+      }
       console.log('amjad');
       // $('#snipcart-show-discount-box').attr('id', 'newId');
     }
