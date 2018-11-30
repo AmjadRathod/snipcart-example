@@ -4,6 +4,8 @@
 }
 .snip-layout .snip-header__user {
   background: none;
+  text-align: left;
+  font-size: 16px;
 }
 .snip-layout .snip-header {
   background: none;
@@ -106,8 +108,4 @@
   color: yellow;
   padding: 10px 25px;
   border-radius: 3px;
-}
-.snip-header__user .signup {
-  text-align: left;
-  font-size: 16px;
 }
