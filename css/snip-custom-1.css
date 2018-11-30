@@ -21,6 +21,10 @@
 #snipcart-items-header tr th:nth-child(6)::before {
   content: 'Remove';
   font-size: 12px;
+  color: #000;
+}
+#snipcart-items-header tr th {
+  color: #000!important;
 }
 #snipcart-items td a.snip-product__remove::before {
   content: 'Remove';
@@ -36,7 +40,7 @@
   color: #000;
   text-align: left!important;
   margin-left: 40px!important;
-  font-size: 22px;
+  font-size: 22px!important;
   text-transform: none!important;
 }
 /* next - devlivery */
@@ -85,4 +89,15 @@
 }
 #snipcart-header #snipcart-header-total {
   visibility: hidden;
+}
+.snip-layout .snip-header__total-label {
+  color: #000!important;
+}
+/*  */
+#snipcart-amount {
+  border-bottom: solid 2px #000;
+  border-top: solid 2px #000;
+}
+.snip-layout .snip-header__total-label {
+  color: #000!important;
 }
