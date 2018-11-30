@@ -125,9 +125,7 @@ $(document).ready(function(){
       Snipcart.execute('bind', 'cart.opened', function() {
         $('#snipcart-header-total').insertAfter($("#snipcart-items"));
       });
-    }
-    if (page == 'cart-content') {
-      console.log('amjad');
+      console.log('body');
     }
       console.log(page);
   });
