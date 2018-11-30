@@ -109,3 +109,9 @@ a.snipcart-user-profile {
 .snip-layout .snip-header__total-label {
   color: #000!important;
 }
+.snip-layout .snip-header__user-mail {
+  color: #000!important;
+}
+.snip-layout .snip-header__user-text {
+  width: 100%!important;
+}
