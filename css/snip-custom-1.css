@@ -21,7 +21,7 @@
 #snipcart-items-header tr th:nth-child(6) {
   content: 'Remove';
 }
-.snip-layout .snip-ico--close::before {
+.snip-product__remove::before {
   content: 'Remove';
   font-size: 14px;
   text-decoration: underline;
