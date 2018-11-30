@@ -7,12 +7,11 @@
   text-align: left;
   font-size: 16px;
 }
-.signup .snipcart-user-profile {
+a.snipcart-user-profile {
   background: blue!important;
   color: yellow!important;
   padding: 10px 25px!important;
   border-radius: 3px!important;
-
 }
 .snip-layout .snip-header {
   background: none;
