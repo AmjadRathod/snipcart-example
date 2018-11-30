@@ -116,10 +116,13 @@ Snipcart.subscribe('cart.opened', function() {
     $('#snipcart-cartitems-continue-top').text('<< Add another Order');
     // $('#snipcart-items').append($("#snipcart-header-total"));
 });
-Snipcart.subscribe('item.removed', function (item) {
-  var snipcart_box_height = $('#snip-layout-cart-content').height();
-  $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
-
+// Snipcart.subscribe('item.removed', function (item) {
+//
+// });
+$(".snip-product__remove").click(function(){
+    alert("The paragraph was clicked.");
+      var snipcart_box_height = $('#snip-layout-cart-content').height();
+      $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
 });
 $(document).ready(function(){
   var checkout = Snipcart.appView.getActiveStep();
