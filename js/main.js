@@ -131,7 +131,7 @@ $(document).ready(function(){
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     if (page == 'cart-content') {
       // Snipcart.settings.onlyAllowGuests = false;
-      $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user-login"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile-login"><span class="snipcart-user-email">I&#39;M MEMBER</span></a></div></div>');
+      $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user-login"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">I&#39;M MEMBER</span></a></div></div>');
       $("#snipcart-current-user").append('<a href="#" class="snipcart-user-logout">(logout/change)</a>');
       $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue">&lt;&lt; Add another Order</a>');
       $("#snipcart-items-list").last().append('<div id="snipcart-header-total" class="snip-header__total"><span class="snip-header__total-label">ORDER TOTAL:</span><span id="snipcart-amount"></span></div>');
@@ -147,15 +147,19 @@ $(document).ready(function(){
       // var userEmail = extractEmails(user)[0];
       //
       // $('.snip-header__user-text').text('Signed-in as:'+userEmail);
-      $( ".snipcart-user-profile-login" ).click(function() {
+      var user = Snipcart.api.user.current();
+      $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
+      $( ".snipcart-user-profile" ).click(function() {
         Snipcart.settings.onlyAllowGuests = false;
       });
       if (Snipcart.currentUser) {
-        $( ".snipcart-user-profile-login" ).css({"visibility": "hidden"});
+        $( ".snipcart-user-profile" ).css({"visibility": "hidden"});
         $( ".snipcart-user-logout" ).css({"visibility": "visible"});
       }
       else {
-        $( ".snipcart-user-profile-login" ).css({"visibility": "visible"});
+        $( ".js-submit" ).trigger( "click" );
+
+        $( ".snipcart-user-profile" ).css({"visibility": "visible"});
         $( ".snipcart-user-logout" ).css({"visibility": "hidden"});
       }
       console.log('amjad');
