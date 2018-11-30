@@ -138,10 +138,8 @@ $(document).ready(function(){
       $('#snipcart-actions .js-next').text('DELIVERY >>');
       var total = $('#snipcart-amount').text();
       $('#snipcart-items-list #snipcart-header-total #snipcart-amount').text(total);
-      var user = $('.snip-header__user-text').text();
-      user = user.split(" ");
-      user = user[1];
-      $('.snip-header__user-text').text('Signed-in as:' + user);
+
+      $('.snip-header__user-text').text('Signed-in as:');
       $( ".snipcart-user-profile" ).click(function() {
         Snipcart.settings.onlyAllowGuests = false;
       });
