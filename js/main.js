@@ -124,6 +124,9 @@ $(document).ready(function(){
     if ($( "body" ).hasClass( "snip-open" )) {
       console.log('snip-open');
     }
+    if (page == 'cart-content') {
+      console.log('amjad');
+    }
       console.log(page);
   });
 });
