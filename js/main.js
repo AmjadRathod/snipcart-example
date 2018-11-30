@@ -138,15 +138,15 @@ $(document).ready(function(){
       $('#snipcart-actions .js-next').text('DELIVERY >>');
       var total = $('#snipcart-amount').text();
       $('#snipcart-items-list #snipcart-header-total #snipcart-amount').text(total);
-      var user = $('.snip-header__user-text').text();
-
-      function extractEmails (text)
-      {
-          return text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-      }
-      var userEmail = extractEmails(user)[0];
-
-      $('.snip-header__user-text').text('Signed-in as:'+userEmail);
+      // var user = $('.snip-header__user-text').text();
+      //
+      // function extractEmails (text)
+      // {
+      //     return text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+      // }
+      // var userEmail = extractEmails(user)[0];
+      //
+      // $('.snip-header__user-text').text('Signed-in as:'+userEmail);
       $( ".snipcart-user-profile" ).click(function() {
         Snipcart.settings.onlyAllowGuests = false;
       });
