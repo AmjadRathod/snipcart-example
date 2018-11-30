@@ -8,6 +8,7 @@
 .snip-layout .snip-header {
   background: none;
 }
+/* title color */
 #snipcart-title {
   color: #000!important;
 }
@@ -15,3 +16,12 @@
 #snipcart-footer {
   display: none;
 }
+/* remove */
+
+#snipcart-items-header tr th:nth-child(6) {
+  content: 'Remove';
+}
+.snip-layout .snip-ico--close::before {
+  content: 'Remove';
+}
+/*  */
