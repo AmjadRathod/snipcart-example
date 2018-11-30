@@ -143,6 +143,9 @@ $(document).ready(function(){
     else {
       $('#snipcart-cartitems-continue-top').css({"display": "none"});
     }
+    if (page == 'login') {
+      $('.sub-title').text(' ');
+    }
     if (page == 'billing-address') {
       $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
