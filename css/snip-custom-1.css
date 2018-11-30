@@ -63,10 +63,6 @@
 /* continue_btn */
 #snipcart-cartitems-continue-top {
   position: absolute;
-  bottom: 0;
-}
-#snipcart-cartitems-continue-top {
-  position: absolute;
   left: 20px;
   background: brown!important;
   color: yellow!important;
