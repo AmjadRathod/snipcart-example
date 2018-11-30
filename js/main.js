@@ -107,7 +107,8 @@
 // });
 
 $(document).ready(function(){
-  Snipcart.appView.setTitle('Reliaprint.co.uk');
+  // Snipcart.appView.setTitle('Reliaprint.co.uk');
   document.addEventListener('snipcart.ready', function() {
+    $('#snipcart-title').text('Reliaprint.co.uk')
   });
 });
