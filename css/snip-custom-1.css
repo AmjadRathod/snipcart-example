@@ -52,4 +52,8 @@
 .snip-table__item td:nth-child(3), .snip-table__item td:nth-child(4) {
   font-size: 0;
 }
-/*  */
+/* tbl had border */
+.snip-layout .snip-table__header {
+  border-bottom: solid 2px #eee;
+  border-top: solid 2px #eee;
+}
