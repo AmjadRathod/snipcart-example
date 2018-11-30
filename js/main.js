@@ -132,6 +132,8 @@ $(document).ready(function(){
       $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue">&lt;&lt; Add another Order</a>');
       $("#snipcart-items-list").last().append('<div id="snipcart-header-total" class="snip-header__total"><span class="snip-header__total-label">ORDER TOTAL:</span><span id="snipcart-amount"></span></div>');
       $('#snipcart-actions .js-next').text('DELIVERY >>');
+      var total = $('#snipcart-amount').text();
+      var total = $('#snipcart-items-list #snipcart-header-total #snipcart-amount').text(total);
       // $('#snipcart-show-discount-box').attr('id', 'newId');
     }
     else {
