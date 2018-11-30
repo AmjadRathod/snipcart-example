@@ -32,9 +32,7 @@
   color: #000;
 }
 /* remove discount */
-#snipcart-show-discount-box {
-  display: none;
-}
+
 /* next - devlivery */
 
 #snipcart-actions .js-next {
