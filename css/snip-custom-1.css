@@ -72,7 +72,7 @@
 }
 /* total */
 #snipcart-items #snipcart-header-total {
-  /* margin: 0; */
+  margin: 0;
   position: absolute;
   right: 25%;
   background: none;
