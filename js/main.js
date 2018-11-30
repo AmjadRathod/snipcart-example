@@ -113,9 +113,11 @@ $(document).ready(function(){
   var checkout = Snipcart.appView.getActiveStep();
   if (checkout == 'checkout') {
     Snipcart.appView.setTitle('Reliaprint.co.uk');
+    Snipcart.appView.hideSteps();
   }
   Snipcart.subscribe('page.changed', function (page) {
     Snipcart.appView.setTitle('Reliaprint.co.uk');
+    Snipcart.appView.hideSteps();
       console.log(page);
   });
 });
