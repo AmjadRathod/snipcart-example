@@ -18,13 +18,13 @@
 }
 /* remove */
 
-#snipcart-items-header tr th:nth-child(6)::before {
+#snipcart-items-header tr th:nth-child(6):: {
   content: 'Remove';
-  font-size: 14px;
+  font-size: inherit;
 }
 #snipcart-items td a.snip-product__remove::before {
   content: 'Remove';
-  font-size: inherit;
+  font-size: 14px;
   text-decoration: underline;
   color: blue!important;
 }
