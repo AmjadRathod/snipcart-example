@@ -135,7 +135,7 @@ $(document).ready(function(){
   }
   Snipcart.subscribe('page.changed', function (page) {
     Snipcart.appView.setTitle('Reliaprint.co.uk');
-    $("#snipcart-title").append('<p class="sub-title">YOUR CART for approval</p>');
+    $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     Snipcart.appView.hideSteps();
     Snipcart.appView.hideLoader();
     if (page == 'cart-content') {
