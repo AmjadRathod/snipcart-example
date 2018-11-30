@@ -131,3 +131,6 @@ a.snipcart-user-profile {
 #snipcart-previous {
   background: brown!important;
 }
+.snipcart-user-logout {
+  visibility: hidden;
+}
