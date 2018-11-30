@@ -47,3 +47,8 @@
   color: yellow!important;
   background-color: blue!important;
 }
+/* Remove loader */
+#snipcart-global-loader {
+  display: none!important;
+}
+/*  */
