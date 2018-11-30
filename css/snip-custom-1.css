@@ -32,7 +32,12 @@
   color: #000;
 }
 /* remove discount */
-
+.sub-title {
+  color: #000;
+  text-align: left;
+  margin-left: 40px;
+  font-size: 22px;
+}
 /* next - devlivery */
 
 #snipcart-actions .js-next {

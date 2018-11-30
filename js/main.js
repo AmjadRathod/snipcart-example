@@ -139,6 +139,8 @@ $(document).ready(function(){
     Snipcart.appView.hideSteps();
     Snipcart.appView.hideLoader();
     if (page == 'cart-content') {
+      $('.sub-title').remove();
+      $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
       $('#snipcart-show-discount-box').attr('id', 'newId');
       $('#snipcart-cartitems-continue-top').css({"display": "block"});
       var snipcart_box_height = $('#snip-layout-cart-content').height();
