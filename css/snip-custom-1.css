@@ -60,3 +60,8 @@
 .snip-layout .snip-header__continue {
   display: inline-block;
 }
+/* continue_btn */
+#snipcart-cartitems-continue-top {
+  position: absolute;
+  bottom: 0;
+}
