@@ -143,6 +143,7 @@ $(document).ready(function(){
     if (page == 'cart-content') {
       $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue">&lt;&lt; Add another Order</a>');
       $("#snipcart-items-list tr").last().append('<div id="snipcart-header-total" class="snip-header__total"><span class="snip-header__total-label">ORDER TOTAL:</span><span id="snipcart-amount"></span></div>');
+      $('#snipcart-actions .js-next').text('DELIVERY >>');
       // $('#snipcart-show-discount-box').attr('id', 'newId');
     }
     else {
