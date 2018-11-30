@@ -124,7 +124,7 @@ a.snipcart-user-profile {
   left: 17px;
 }
 .snipcart-user-logout {
-  position: relative;
+  position: absolute;
   left: 220px;
-  top: -13px;
+  top: 10px;
 }
