@@ -21,11 +21,14 @@
 #snipcart-items-header tr th:nth-child(6) {
   content: 'Remove';
 }
-.snip-product__remove::before {
+#snipcart-items .snip-layout .snip-ico--close::before {
   content: 'Remove';
   font-size: 14px;
   text-decoration: underline;
   color: blue!important;
+}
+.snip-layout .snip-ico {
+  color: #000;
 }
 /* remove discount */
 #snipcart-show-discount-box {
