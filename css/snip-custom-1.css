@@ -18,9 +18,9 @@
 }
 /* remove */
 
-#snipcart-items-header tr th:nth-child(6):: {
+#snipcart-items-header tr th:nth-child(6)::before {
   content: 'Remove';
-  font-size: inherit;
+  font-size: 12px;
 }
 #snipcart-items td a.snip-product__remove::before {
   content: 'Remove';
