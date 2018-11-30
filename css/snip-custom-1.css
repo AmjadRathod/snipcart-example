@@ -135,7 +135,7 @@ a.snipcart-user-profile {
   visibility: hidden;
 }
 /*  */
-.snip-header__user-text::after {
+.snip-header__user-text::before {
   content: 'Signed-in as:';
   font-size: 14px;
 }
