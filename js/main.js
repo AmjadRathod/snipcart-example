@@ -111,11 +111,12 @@ document.addEventListener('snipcart.ready', function() {
 });
 Snipcart.subscribe('cart.opened', function() {
     console.log('Snipcart popup is visible 2');
-    $('#snipcart-items').append($("#snipcart-header-total"));
+    var snipcart_box_height = $('#snip-layout-cart-content').height();
+    $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55'px'});
+    // $('#snipcart-items').append($("#snipcart-header-total"));
 });
 $(document).ready(function(){
-  var snipcart_box_height = $('#snip-layout-cart-content').height();
-  $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
+
   var checkout = Snipcart.appView.getActiveStep();
   if (checkout == 'checkout') {
     Snipcart.appView.setTitle('Reliaprint.co.uk');
