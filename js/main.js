@@ -123,10 +123,8 @@ $(document).ready(function(){
     Snipcart.appView.setTitle('Reliaprint.co.uk');
     Snipcart.appView.hideSteps();
     Snipcart.appView.hideLoader();
-    if ($( "body" ).hasClass( "snip-open" )) {
       $('#snipcart-items').append($("#snipcart-header-total"));
       console.log('testing body');
-    }
       console.log(page);
   });
 });
