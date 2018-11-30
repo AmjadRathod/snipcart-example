@@ -111,18 +111,6 @@ document.addEventListener('snipcart.ready', function() {
 });
 Snipcart.subscribe('cart.opened', function() {
     console.log('Snipcart popup is visible 2');
-    // var snipcart_box_height = $('#snip-layout-cart-content').height();
-    // $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
-    // $('#snipcart-cartitems-continue-top').text('<< Add another Order');
-    // $('#snipcart-items').append($("#snipcart-header-total"));
-});
-Snipcart.subscribe('item.removed', function (item) {
-  // var snipcart_box_height = $('#snip-layout-cart-content').height();
-  // $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
-});
-$("#snipcart-items nip-product__remove").click(function(){
-  // var snipcart_box_height = $('#snip-layout-cart-content').height();
-  // $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
 });
 $(document).ready(function(){
   var checkout = Snipcart.appView.getActiveStep();
@@ -148,6 +136,21 @@ $(document).ready(function(){
     }
     else {
       $('#snipcart-cartitems-continue-top').css({"display": "none"});
+    }
+    if (page == 'billing-address') {
+      $('#snipcart-previous').text('<< Go Back');
+      $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
+      $('#snipcart-next').text('Continue >>');
+      $('#snipcart-previous').css({"background": "blue", "color": "yellow"});
+      $('.sub-title').text('Where do we deliver:');
+    }
+    if (page == 'payment-method') {
+      $('#snipcart-previous').text('<< Go Back');
+      $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
+      $('#snipcart-paymentmethod-pay').text('PLACE ORDER');
+      $('#snipcart-paymentmethod-pay').css({"background": "#F27746", "color": "yellow"});
+      $('.sub-title').text('Payment Method');
+      $('.snip-product').css({"display": "none"});
     }
       console.log(page);
   });

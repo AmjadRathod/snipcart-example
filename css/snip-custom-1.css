@@ -81,7 +81,7 @@
   font-weight: 700;
 }
 #snipcart-show-discount-box {
-  display: none;
+  visibility: hidden;
 }
 #snipcart-header #snipcart-header-total {
   visibility: hidden;
