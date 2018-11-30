@@ -1,0 +1,17 @@
+/* cart background */
+.snip-layout .snip-layout__main-container {
+  background: #fdf3f3;
+}
+.snip-layout .snip-header__user {
+  background: none;
+}
+.snip-layout .snip-header {
+  background: none;
+}
+#snipcart-title {
+  color: #000!important;
+}
+/* remove footer */
+#snipcart-footer {
+  display: none;
+}
