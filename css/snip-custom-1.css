@@ -24,7 +24,7 @@
 }
 #snipcart-items td a.snip-product__remove::before {
   content: 'Remove';
-  font-size: 14px;
+  font-size: inherit;
   text-decoration: underline;
   color: blue!important;
 }
