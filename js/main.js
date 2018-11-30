@@ -105,10 +105,20 @@
 // });
 //   $("#control-qid13228").click();
 // });
-$('#snipcart-title').text('Reliaprint.co.uk')
 document.addEventListener('snipcart.ready', function() {
+  // $('#snipcart-title').text('Reliaprint.co.uk')
 });
 
 $(document).ready(function(){
-  // Snipcart.appView.setTitle('Reliaprint.co.uk');
+  var load = Snipcart.appView.loadComplete();
+  }
+
+  var checkout = Snipcart.appView.getActiveStep();
+  if (checkout == 'checkout') {
+    Snipcart.appView.setTitle('Reliaprint.co.uk');
+  }
+  Snipcart.subscribe('page.changed', function (page) {
+    Snipcart.appView.setTitle('Reliaprint.co.uk');
+      console.log(page);
+  });
 });
