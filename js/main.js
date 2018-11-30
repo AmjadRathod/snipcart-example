@@ -105,3 +105,9 @@
 // });
 //   $("#control-qid13228").click();
 // });
+
+$(document).ready(function(){
+  document.addEventListener('snipcart.ready', function() {
+    Snipcart.appView.setTitle('Reliaprint.co.uk');
+  });
+});
