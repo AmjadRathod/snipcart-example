@@ -125,7 +125,11 @@ $(document).ready(function(){
       console.log('snip-open');
     }
     if (page == 'cart-content') {
+      Snipcart.execute('bind', 'cart.opened', function() {
+        $('#snipcart-header-total').insertAfter($("#snipcart-items"));
+      });
       console.log('amjad');
+      $()
     }
       console.log(page);
   });
