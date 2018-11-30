@@ -118,10 +118,10 @@ $(document).ready(function(){
     console.log('hiii');
   }
   Snipcart.subscribe('page.changed', function (page) {
-    if (page == 'cart-content') {
-      $('#snipcart-header-total').insertBefore($("#snipcart-show-discount-box"));
-
-    }
+    // if (page == 'cart-content') {
+    //   $('#snipcart-header-total').insertBefore($("#snipcart-show-discount-box"));
+    //
+    // }
     Snipcart.appView.setTitle('Reliaprint.co.uk');
     Snipcart.appView.hideSteps();
     Snipcart.appView.hideLoader();
