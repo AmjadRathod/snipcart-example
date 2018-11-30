@@ -47,9 +47,9 @@
 }
 /* remove col */
 #snipcart-items-header tr th:nth-child(3), #snipcart-items-header tr th:nth-child(4) {
-  visibility: hidden;
+  font-size: 0;
 }
 .snip-table__item td:nth-child(3), .snip-table__item td:nth-child(4) {
-  visibility: hidden;
+  font-size: 0;
 }
 /*  */
