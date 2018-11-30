@@ -23,5 +23,11 @@
 }
 .snip-layout .snip-ico--close::before {
   content: 'Remove';
+  font-size: 14px;
+  text-decoration: underline;
+  color: blue!important;
 }
-/*  */
+/* remove discount */
+#snipcart-show-discount-box {
+  display: none;
+}
