@@ -114,6 +114,7 @@ Snipcart.subscribe('cart.opened', function() {
 });
 $(document).ready(function(){
   Snipcart.api.setCurrency('gbp');
+  Snipcart.api.cart.currency('gbp');
   var checkout = Snipcart.appView.getActiveStep();
   // $('#snipcart-show-discount-box').attr('id', 'newId');
   if (checkout == 'checkout') {
