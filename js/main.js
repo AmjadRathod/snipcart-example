@@ -110,7 +110,7 @@ document.addEventListener('snipcart.ready', function() {
   // $('#snipcart-items').append($("#snipcart-header-total"));
 });
 Snipcart.subscribe('cart.opened', function() {
-    console.log('Snipcart popup is visible');
+    console.log('Snipcart popup is visible 2');
     $('#snipcart-items').append($("#snipcart-header-total"));
 });
 $(document).ready(function(){
