@@ -157,8 +157,6 @@ $(document).ready(function(){
         $( ".snipcart-user-logout" ).css({"visibility": "visible"});
       }
       else {
-        $( ".js-submit" ).trigger( "click" );
-
         $( ".snipcart-user-profile" ).css({"visibility": "visible"});
         $( ".snipcart-user-logout" ).css({"visibility": "hidden"});
       }
