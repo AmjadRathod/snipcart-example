@@ -70,3 +70,19 @@
   background: brown!important;
   color: yellow!important;
 }
+/* total */
+#snipcart-items #snipcart-header-total {
+  margin: 0;
+  position: absolute;
+  right: 25%;
+  background: none;
+  color: #000!important;
+  font-size: 22px;
+  font-weight: 700;
+}
+#snipcart-show-discount-box {
+  display: none;
+}
+#snipcart-header #snipcart-header-total {
+  display: none;
+}
