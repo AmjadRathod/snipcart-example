@@ -122,14 +122,12 @@ $(document).ready(function(){
     Snipcart.appView.hideSteps();
     Snipcart.appView.hideLoader();
     if ($( "body" ).hasClass( "snip-open" )) {
-      console.log('snip-open');
-    }
-    if (page == 'cart-content') {
       Snipcart.execute('bind', 'cart.opened', function() {
         $('#snipcart-header-total').insertAfter($("#snipcart-items"));
       });
+    }
+    if (page == 'cart-content') {
       console.log('amjad');
-      $()
     }
       console.log(page);
   });
