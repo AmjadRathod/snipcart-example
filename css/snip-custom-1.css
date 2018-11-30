@@ -20,6 +20,7 @@
 
 #snipcart-items-header tr th:nth-child(6) {
   content: 'Remove';
+  font-size: 14px;
 }
 #snipcart-items .snip-layout .snip-ico--close::before {
   content: 'Remove';
@@ -33,4 +34,16 @@
 /* remove discount */
 #snipcart-show-discount-box {
   display: none;
+}
+/* next - devlivery */
+#snipcart-actions .js-next::before {
+  padding: 5px 20px;
+  font-size: 16px;
+  /*  */
+  content: 'DELIVERY >>';
+}
+#snipcart-actions .js-next {
+  font-size: 0;
+  color: yellow!important;
+  background-color: blue!important;
 }
