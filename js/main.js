@@ -152,9 +152,11 @@ $(document).ready(function(){
       });
       if (Snipcart.currentUser) {
         $( ".snipcart-user-profile" ).css({"visibility": "hidden"});
+        $( ".snipcart-user-logout" ).css({"visibility": "visible"});
       }
       else {
         $( ".snipcart-user-profile" ).css({"visibility": "visible"});
+        $( ".snipcart-user-logout" ).css({"visibility": "hidden"});
       }
       console.log('amjad');
       // $('#snipcart-show-discount-box').attr('id', 'newId');
