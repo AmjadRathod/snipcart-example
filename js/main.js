@@ -133,7 +133,8 @@ $(document).ready(function(){
       $("#snipcart-items-list").last().append('<div id="snipcart-header-total" class="snip-header__total"><span class="snip-header__total-label">ORDER TOTAL:</span><span id="snipcart-amount"></span></div>');
       $('#snipcart-actions .js-next').text('DELIVERY >>');
       var total = $('#snipcart-amount').text();
-      var total = $('#snipcart-items-list #snipcart-header-total #snipcart-amount').text(total);
+      $('#snipcart-items-list #snipcart-header-total #snipcart-amount').text(total);
+      console.log('amjad');
       // $('#snipcart-show-discount-box').attr('id', 'newId');
     }
     else {
