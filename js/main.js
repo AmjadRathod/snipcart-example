@@ -142,11 +142,8 @@ $(document).ready(function(){
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     if (page == 'cart-content') {
       $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue">&lt;&lt; Add another Order</a>');
-      $('#snipcart-show-discount-box').attr('id', 'newId');
-      // $('#snipcart-cartitems-continue-top').css({"display": "block"});
-      // var snipcart_box_height = $('#snip-layout-cart-content').height();
-      // $('#snipcart-cartitems-continue-top').css({"top": snipcart_box_height - 55});
-      // $('#snipcart-cartitems-continue-top').text('<< Add another Order');
+      $("#snipcart-items-list tr").last().append('<div id="snipcart-header-total" class="snip-header__total"><span class="snip-header__total-label">ORDER TOTAL:</span><span id="snipcart-amount"></span></div>');
+      // $('#snipcart-show-discount-box').attr('id', 'newId');
     }
     else {
       $('#snipcart-cartitems-continue-top').css({"display": "none"});
