@@ -111,16 +111,16 @@ document.addEventListener('snipcart.ready', function() {
 });
 Snipcart.subscribe('cart.opened', function() {
     console.log('Snipcart popup is visible 2');
+    var user = Snipcart.api.user.current();
+    if (user) {
+      $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
+      $( ".snipcart-user-profile" ).click(function() {
+        Snipcart.settings.onlyAllowGuests = false;
+      });
+    }
 });
 $(document).ready(function(){
   Snipcart.api.cart.currency('gbp');
-  var user = Snipcart.api.user.current();
-  if (user) {
-    $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
-    $( ".snipcart-user-profile" ).click(function() {
-      Snipcart.settings.onlyAllowGuests = false;
-    });
-  }
   var checkout = Snipcart.appView.getActiveStep();
   // $('#snipcart-show-discount-box').attr('id', 'newId');
   if (checkout == 'checkout') {
