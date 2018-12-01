@@ -153,3 +153,10 @@ a.snipcart-user-profile {
 .snip-layout .snip-form__label {
   color: #000!important;
 }
+#snipcart-newaccount-form-container {
+  display: none!important;
+}
+#snipcart-login-form-container {
+  position: relative;
+  left: 25%;
+}
