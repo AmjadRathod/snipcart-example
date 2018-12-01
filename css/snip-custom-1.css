@@ -115,7 +115,7 @@ a.snipcart-user-profile {
   color: #000!important;
 }
 .snip-layout .snip-header__user-text {
-  font-size: 0;
+  /* font-size: 0; */
   max-width: 100%!important;
 }
 .snip-layout .snip-header__user-text .snip-header__user-mail {
