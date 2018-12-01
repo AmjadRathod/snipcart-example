@@ -194,3 +194,6 @@ a.snipcart-user-profile {
     background-color: white;
     overflow: hidden;
 }
+#snipcart-login-form-container {
+  display: none;
+}
