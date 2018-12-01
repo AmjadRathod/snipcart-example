@@ -145,6 +145,12 @@ $(document).ready(function(){
         Snipcart.settings.onlyAllowGuests = false;
       });
     }
+    if (page == 'orders') {
+      var curUrl = window.location.href;
+      var dir = '#!/';
+      var url = curUrl.split(dir)[0];
+      window.location.replace(url + dir + 'billing-address');
+    }
     if (page == 'cart-content') {
       // Snipcart.settings.onlyAllowGuests = false;
       $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user-login"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">I&#39;M MEMBER</span></a></div></div>');
