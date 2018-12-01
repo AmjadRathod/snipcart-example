@@ -145,7 +145,7 @@ $(document).ready(function(){
         Snipcart.settings.onlyAllowGuests = false;
       });
     }
-    if (page == 'orders') {
+    if (page == 'customer/orders-history') {
       var curUrl = window.location.href;
       var dir = '#!/';
       var url = curUrl.split(dir)[0];
