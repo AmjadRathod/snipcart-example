@@ -130,10 +130,12 @@ $(document).ready(function(){
     $('.sub-title').remove();
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     var user = Snipcart.api.user.current();
-    $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
-    $( ".snipcart-user-profile" ).click(function() {
-      Snipcart.settings.onlyAllowGuests = false;
-    });
+    if (user['email']) {
+      $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
+      $( ".snipcart-user-profile" ).click(function() {
+        Snipcart.settings.onlyAllowGuests = false;
+      });
+    }
     if (page == 'cart-content') {
       // Snipcart.settings.onlyAllowGuests = false;
       $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user-login"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">I&#39;M MEMBER</span></a></div></div>');
