@@ -141,10 +141,10 @@ a.snipcart-user-profile {
   visibility: hidden;
 }
 /*  */
-.snip-header__user-text::before {
+/* .snip-header__user-text::before {
   content: 'Signed-in as:';
   font-size: 14px;
 }
 .snip-header__user-text {
   font-size: 0;
-}
+} */
