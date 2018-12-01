@@ -118,6 +118,8 @@ Snipcart.subscribe('cart.opened', function() {
         Snipcart.settings.onlyAllowGuests = false;
       });
     }
+    var email_width = $('.snip-header__user-text').width();
+    $('.snipcart-user-logout').css({"left": email_width + 30});
 });
 $(document).ready(function(){
   Snipcart.api.cart.currency('gbp');
