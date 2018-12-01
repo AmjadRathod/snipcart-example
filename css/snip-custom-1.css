@@ -175,3 +175,22 @@ a.snipcart-user-profile {
     top: -600px;
   }
 }
+/* accordion */
+.accordion {
+
+    background: blue!important;
+    color: yellow!important;
+    padding: 10px 25px!important;
+    border-radius: 3px!important;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 10px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
