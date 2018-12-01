@@ -209,10 +209,33 @@ $(document).ready(function(){
       $("#snipcart-billingaddress-form label[for='snip-address2']").text('ADDRESS LINE 2 :');
       $("#snipcart-billingaddress-form label[for='snip-country']").text('COUNTRY (optional) :');
       $("#snipcart-billingaddress-form label[for='snip-city']").text('TOWN CITY* :');
-      $("#snipcart-billingaddress-form label[for='snip-postalCode']").text('POST CODE* :');
+      $("#snipcart-billingaddress-form label[for='snip-postalCode']").text('POSTCODE* :');
       $("#snipcart-billingaddress-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
       $("#snipcart-billingaddress-form label[for='snip-province']").text('ANY SPECIAL DELIVERY INSTRUCTIONS :');
     }
+
+    if (page == 'shipping-address') {
+
+      // $('#snipcart-billingaddress-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
+      $('#snipcart-previous').text('<< Go Back');
+      $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
+      $('#snipcart-next').text('Continue >>');
+      $('#snipcart-next').css({"background": "blue", "color": "yellow"});
+      $('#snipcart-previous').css({"background": "blue", "color": "yellow"});
+      $('.sub-title').text('Invoice Address');
+      // lable text
+      $("#snipcart-billingaddress-form label[for='snip-name']").text('INVOICE TO :');
+      $("#snipcart-billingaddress-form label[for='snip-company']").text('COMPANY or ORGANISATION NAME (optional) :');
+      $("#snipcart-billingaddress-form label[for='snip-phone']").text('YOUR PHONE NUMBER (optional) :');
+      $("#snipcart-billingaddress-form label[for='snip-address1']").text('INVOICE ADDRESS LINE 1* :');
+      $("#snipcart-billingaddress-form label[for='snip-address2']").text('INVOICE ADDRESS LINE 2 :');
+      $("#snipcart-billingaddress-form label[for='snip-country']").text('COUNTRY (optional) :');
+      $("#snipcart-billingaddress-form label[for='snip-city']").text('TOWN CITY* :');
+      $("#snipcart-billingaddress-form label[for='snip-postalCode']").text('INVOICE POSTCODE* :');
+      // $("#snipcart-billingaddress-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
+      // $("#snipcart-billingaddress-form label[for='snip-province']").text('ANY SPECIAL DELIVERY INSTRUCTIONS :');
+    }
+
     if (page == 'payment-method') {
       $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
