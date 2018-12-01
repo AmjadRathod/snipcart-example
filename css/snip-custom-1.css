@@ -160,3 +160,18 @@ a.snipcart-user-profile {
   position: relative;
   left: 25%;
 }
+@media only screen and (min-width: 48em) {
+  .snip-layout .snip-cols {
+    display: block!important;
+  }
+  .snip-layout .snip-col {
+    float: unset;
+    position: relative;
+    left: 25%;
+    width: 50%!important;
+  }
+  #snipcart-billingaddress-form .snipcart-checkbox-field {
+    position: absolute;
+    top: -600px;
+  }
+}

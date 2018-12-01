@@ -193,6 +193,8 @@ $(document).ready(function(){
       $('.sub-title').text(' ');
     }
     if (page == 'billing-address') {
+
+      $('#snipcart-billingaddress-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
       $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
       $('#snipcart-next').text('Continue >>');
