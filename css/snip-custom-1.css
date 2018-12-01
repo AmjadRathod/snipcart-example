@@ -117,6 +117,7 @@ a.snipcart-user-profile {
 .snip-layout .snip-header__user-text {
   /* font-size: 0; */
   max-width: 100%!important;
+  display: inline-block;
 }
 .snip-layout .snip-header__user-text .snip-header__user-mail {
   font-size: 14px;
