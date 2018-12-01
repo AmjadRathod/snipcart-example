@@ -216,7 +216,7 @@ $(document).ready(function(){
 
     if (page == 'shipping-address') {
 
-      // $('#snipcart-billingaddress-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
+      // $('#snipcart-shipping-address-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
       $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
       $('#snipcart-next').text('Continue >>');
@@ -224,16 +224,16 @@ $(document).ready(function(){
       $('#snipcart-previous').css({"background": "blue", "color": "yellow"});
       $('.sub-title').text('Invoice Address');
       // lable text
-      $("#snipcart-billingaddress-form label[for='snip-name']").text('INVOICE TO :');
-      $("#snipcart-billingaddress-form label[for='snip-company']").text('COMPANY or ORGANISATION NAME (optional) :');
-      $("#snipcart-billingaddress-form label[for='snip-phone']").text('YOUR PHONE NUMBER (optional) :');
-      $("#snipcart-billingaddress-form label[for='snip-address1']").text('INVOICE ADDRESS LINE 1* :');
-      $("#snipcart-billingaddress-form label[for='snip-address2']").text('INVOICE ADDRESS LINE 2 :');
-      $("#snipcart-billingaddress-form label[for='snip-country']").text('COUNTRY (optional) :');
-      $("#snipcart-billingaddress-form label[for='snip-city']").text('TOWN CITY* :');
-      $("#snipcart-billingaddress-form label[for='snip-postalCode']").text('INVOICE POSTCODE* :');
-      // $("#snipcart-billingaddress-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
-      // $("#snipcart-billingaddress-form label[for='snip-province']").text('ANY SPECIAL DELIVERY INSTRUCTIONS :');
+      $("#snipcart-shipping-address-form label[for='snip-name']").text('INVOICE TO :');
+      $("#snipcart-shipping-address-form label[for='snip-company']").text('COMPANY or ORGANISATION NAME (optional) :');
+      $("#snipcart-shipping-address-form label[for='snip-phone']").text('YOUR PHONE NUMBER (optional) :');
+      $("#snipcart-shipping-address-form label[for='snip-address1']").text('INVOICE ADDRESS LINE 1* :');
+      $("#snipcart-shipping-address-form label[for='snip-address2']").text('INVOICE ADDRESS LINE 2 :');
+      $("#snipcart-shipping-address-form label[for='snip-country']").text('COUNTRY (optional) :');
+      $("#snipcart-shipping-address-form label[for='snip-city']").text('TOWN CITY* :');
+      $("#snipcart-shipping-address-form label[for='snip-postalCode']").text('INVOICE POSTCODE* :');
+      // $("#snipcart-shipping-address-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
+      // $("#snipcart-shipping-address-form label[for='snip-province']").text('ANY SPECIAL DELIVERY INSTRUCTIONS :');
     }
 
     if (page == 'payment-method') {
