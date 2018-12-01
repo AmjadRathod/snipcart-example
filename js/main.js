@@ -130,7 +130,7 @@ $(document).ready(function(){
     $('.sub-title').remove();
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     var user = Snipcart.api.user.current();
-    if (user['email']) {
+    if (user) {
       $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
       $( ".snipcart-user-profile" ).click(function() {
         Snipcart.settings.onlyAllowGuests = false;
