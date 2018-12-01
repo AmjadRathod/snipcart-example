@@ -157,9 +157,8 @@ $(document).ready(function(){
     if (page == 'cart-content') {
       // Snipcart.settings.onlyAllowGuests = false;
       $("#snipcart-discounts .snip-actions").append('<div><div><a href="#"><span class="accordion">I&#39;M MEMBER</span></a></div></div><div class="panel"><input type="text" name="email" id="snipcart-login-email"><input type="password" name="password" id="snipcart-login-password"><a href="#" id="snipcart-login-forgotpassword-link"class="snip-static__link">I forgot my password</a><a href="#" id="snipcart-login-submit" class="snip-btn snip-btn--full">Login</a></div>');
-      var acc = $(".accordion");
+      var acc = document.getElementsByClassName("accordion");
       var i;
-
       for (i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function() {
               this.classList.toggle("active");
