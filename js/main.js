@@ -155,10 +155,13 @@ $(document).ready(function(){
       //
       // $('.snip-header__user-text').text('Signed-in as:'+userEmail);
       var user = Snipcart.api.user.current();
-      $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
-      $( ".snipcart-user-profile" ).click(function() {
-        Snipcart.settings.onlyAllowGuests = false;
-      });
+      if (user) {
+        $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
+        $( ".snipcart-user-profile" ).click(function() {
+          Snipcart.settings.onlyAllowGuests = false;
+        });
+      }
+
       if (Snipcart.currentUser) {
         $( ".snipcart-user-profile" ).css({"visibility": "hidden"});
         $( ".snipcart-user-logout" ).css({"visibility": "visible"});
