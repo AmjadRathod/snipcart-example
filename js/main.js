@@ -201,6 +201,17 @@ $(document).ready(function(){
       $('#snipcart-next').css({"background": "blue", "color": "yellow"});
       $('#snipcart-previous').css({"background": "blue", "color": "yellow"});
       $('.sub-title').text('Where do we deliver:');
+      // lable text
+      $("#snipcart-billingaddress-form label[for='snip-name']").text('YOUR NAME :');
+      $("#snipcart-billingaddress-form label[for='snip-company']").text('COMPANY or ORGANISATION NAME :');
+      $("#snipcart-billingaddress-form label[for='snip-phone']").text('YOUR PHONE NUMBER (optional) :');
+      $("#snipcart-billingaddress-form label[for='snip-address1']").text('ADDRESS LINE 1* :');
+      $("#snipcart-billingaddress-form label[for='snip-address2']").text('ADDRESS LINE 2 :');
+      $("#snipcart-billingaddress-form label[for='snip-country']").text('COUNTRY (optional) :');
+      $("#snipcart-billingaddress-form label[for='snip-city']").text('TOWN CITY* :');
+      $("#snipcart-billingaddress-form label[for='snip-postalCode']").text('POST CODE* :');
+      $("#snipcart-billingaddress-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
+      $("#snipcart-billingaddress-form label[for='snip-province']").text('ANY SPECIAL DELIVERY INSTRUCTIONS :');
     }
     if (page == 'payment-method') {
       $('#snipcart-previous').text('<< Go Back');
