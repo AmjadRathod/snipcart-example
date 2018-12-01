@@ -20,7 +20,7 @@ a.snipcart-user-profile {
 }
 /* title color */
 #snipcart-title {
-  color: #000!important;
+  color: #8C1F96!important;
 }
 /* remove footer */
 #snipcart-footer {
@@ -118,6 +118,7 @@ a.snipcart-user-profile {
   /* font-size: 0; */
   max-width: 100%!important;
   display: inline-block;
+  color: #000!important;
 }
 .snip-layout .snip-header__user-text .snip-header__user-mail {
   font-size: 14px;
@@ -149,3 +150,6 @@ a.snipcart-user-profile {
 .snip-header__user-text {
   font-size: 0;
 } */
+.snip-layout .snip-form__label {
+  color: #000!important;
+}
