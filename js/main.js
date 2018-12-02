@@ -244,11 +244,12 @@ $(document).ready(function(){
       $('#snipcart-paymentmethod-pay').text('PLACE ORDER');
       $('#snipcart-paymentmethod-pay').css({"background": "#F27746", "color": "yellow"});
       $('.sub-title').text('Payment Method');
-      $('.snip-product').css({"display": "none"});
+      $('.snip-product').css({"display": "none", "color": "yellow"});
     }
 
     if (page == 'shipping-method') {
-      $( "#snipcart-next" ).trigger( "click" );
+      $('#snipcart-next').text('Continue >>');
+      $( "#snipcart-next" ).css({"background":"blue", });
     }
     if (page == 'order-confirm') {
       $( ".js-submit" ).trigger( "click" );
