@@ -126,11 +126,6 @@ a.snipcart-user-profile {
 .snip-quantity-trigger {
   visibility: hidden;
 }
-#snipcart-current-user {
-  position: relative!important;
-  top: 100px;
-  left: 17px;
-}
 .snipcart-user-logout {
   position: absolute;
   left: 220px;
