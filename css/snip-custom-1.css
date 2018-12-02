@@ -178,4 +178,6 @@ a.snipcart-user-profile {
 }
 #snipcart-login-cancel {
   float: right;
+  position: relative;
+  top: -47px;
 }

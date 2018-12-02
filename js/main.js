@@ -254,6 +254,12 @@ $(document).ready(function(){
     }
     if (page == 'login') {
       $("#snipcart-login-form-container form").append('<a href="#" id="snipcart-login-cancel" class="snip-btn snip-btn--full">Cancel</a>');
+      $( "#snipcart-login-cancel" ).click(function() {
+        var curUrl = window.location.href;
+        var dir = '#!/';
+        var url = curUrl.split(dir)[0];
+        window.location.replace(url + dir + 'cart');
+      });
     }
     if (page == 'order-confirm') {
       $( ".js-submit" ).trigger( "click" );
