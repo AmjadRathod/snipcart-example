@@ -253,7 +253,7 @@ $(document).ready(function(){
       $( "#snipcart-next" ).css({"background":"blue", });
     }
     if (page == 'login') {
-      $("#snipcart-login-form-container form").append('<a href="#" id="snipcart-login-submit" class="snip-btn snip-btn--full">Cancel</a>');
+      $("#snipcart-login-form-container form").append('<a href="#" id="snipcart-login-cancel" class="snip-btn snip-btn--full">Cancel</a>');
     }
     if (page == 'order-confirm') {
       $( ".js-submit" ).trigger( "click" );
