@@ -150,6 +150,7 @@ $(document).ready(function(){
       var dir = '#!/';
       var url = curUrl.split(dir)[0];
       window.location.replace(url + dir + 'cart');
+      console.log('cart Amjad');
     }
     if (page == 'empty-cart') {
       Snipcart.appView.close();
