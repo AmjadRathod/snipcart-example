@@ -265,7 +265,10 @@ $(document).ready(function(){
       $( ".js-submit" ).trigger( "click" );
     }
     if (page == 'order-details') {
-      alert("success page but we not set page ok");
+      var curUrl = window.location.href;
+      var dir = 'snipcart-example/';
+      var url = curUrl.split(dir)[0];
+      window.location.replace(url + dir + 'sucess/');
     }
       console.log(page);
   });
