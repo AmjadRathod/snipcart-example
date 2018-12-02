@@ -170,3 +170,8 @@ a.snipcart-user-profile {
     top: -600px;
   }
 }
+/* ḷogin btn */
+#snipcart-login-submit {
+  background: blue;
+  color: yellow
+}
