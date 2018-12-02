@@ -149,7 +149,7 @@ $(document).ready(function(){
       var curUrl = window.location.href;
       var dir = '#!/';
       var url = curUrl.split(dir)[0];
-      window.location.replace(url + dir + 'cart-content');
+      window.location.replace(url + dir + 'cart');
     }
     if (page == 'empty-cart') {
       Snipcart.appView.close();
