@@ -264,6 +264,9 @@ $(document).ready(function(){
     if (page == 'order-confirm') {
       $( ".js-submit" ).trigger( "click" );
     }
+    if (page == 'order-details') {
+      alert("success page but we not set page ok");
+    }
       console.log(page);
   });
 });

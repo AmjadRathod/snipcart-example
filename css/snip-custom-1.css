@@ -1,3 +1,4 @@
+/* custom snipcart css file by Amjad Rathod */
 /* cart background */
 .snip-layout .snip-layout__main-container {
   background: #f7f7eb;
@@ -137,14 +138,6 @@ a.snipcart-user-profile {
 .snipcart-user-logout {
   visibility: hidden;
 }
-/*  */
-/* .snip-header__user-text::before {
-  content: 'Signed-in as:';
-  font-size: 14px;
-}
-.snip-header__user-text {
-  font-size: 0;
-} */
 .snip-layout .snip-form__label {
   color: #000!important;
 }
@@ -176,6 +169,7 @@ a.snipcart-user-profile {
   color: yellow;
   width: 40%;
 }
+/* login cancel btn */
 #snipcart-login-cancel {
   float: right;
   position: relative;
