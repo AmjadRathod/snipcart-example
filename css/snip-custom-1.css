@@ -195,7 +195,9 @@ a.snipcart-user-profile {
   .snip-layout .snip-table--small td, .snip-layout .snip-table--small th, .snip-layout .snip-table--small tr {
     display: inline-block!important;
   }
-
+  .snip-layout .snip-table--small td:nth-child(4) {
+    margin: 0;
+  }
   .snip-layout .snip-table--small .snip-table__header {
     display: block;
   }
@@ -214,6 +216,7 @@ a.snipcart-user-profile {
     margin: 0!important;
     right: 0!important;
     left: 0!important;
+    top: 0;
   }
   #snipcart-items-header {
     padding-top: 0;
@@ -221,7 +224,8 @@ a.snipcart-user-profile {
   }
   #snipcart-items #snipcart-header-total {
     font-size: 16px;
-    right: 22%;
+    position: relative;
+    left: 18%;
     top: 45px;
   }
   a.snipcart-user-profile {
