@@ -214,7 +214,7 @@ a.snipcart-user-profile {
   .snip-layout .snip-table--small td:nth-child(6) {
   }
   .snip-layout .snip-discount__remove, .snip-layout .snip-product__remove {
-    top: 0;
+    right: unset;
     margin-left: 120px;
   }
   #snipcart-items-header {
