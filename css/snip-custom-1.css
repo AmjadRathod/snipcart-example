@@ -187,19 +187,6 @@ a.snipcart-user-profile {
 }
 /* mobile  */
 
-@media only screen and (max-width: 668px) {
-  #snipcart-items-header tr th:nth-child(5) {
-    position: relative;
-    left: 150%!important;
-  }
-  #snipcart-items-header tr th:nth-child(6) {
-    position: relative;
-    left: 170%!important;
-  }
-  .snip-layout .snip-table--small td:nth-child(6) {
-    left: 40%;
-  }
-}
 @media only screen and (max-width: 767px) {
   body.snip-open {
     position: fixed;
@@ -265,5 +252,18 @@ a.snipcart-user-profile {
   .sub-title {
     font-size: 18px!important;
     margin: 0!important;
+  }
+}
+@media only screen and (max-width: 668px) {
+  #snipcart-items-header tr th:nth-child(5) {
+    position: relative;
+    left: 150%!important;
+  }
+  #snipcart-items-header tr th:nth-child(6) {
+    position: relative;
+    left: 170%!important;
+  }
+  .snip-layout .snip-table--small td:nth-child(6) {
+    left: 40%;
   }
 }
