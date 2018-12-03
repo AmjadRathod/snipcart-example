@@ -88,7 +88,7 @@ a.snipcart-user-profile {
 /* total */
 #snipcart-items #snipcart-header-total {
   margin: 0;
-  position: absolute;
+  position: relative;
   right: 15%;
   background: none;
   color: #000!important;
@@ -182,17 +182,51 @@ a.snipcart-user-profile {
 #snipcart-steps {
   visibility: hidden;
 }
+#snipcart-plans-header {
+  border: none!important;
+}
 /* mobile  */
 
 @media only screen and (max-width: 48em) {
   .snip-layout .snip-table--small td, .snip-layout .snip-table--small th, .snip-layout .snip-table--small tr {
     display: inline-block!important;
   }
+
+  .snip-layout .snip-table--small .snip-table__header {
+    display: block;
+  }
+  .snip-layout .snip-table--small td:nth-child(1) {
+    float:left;
+  }
+  .snip-layout .snip-table--small td:nth-child(2) {
+    position: relative;
+    left: 65%;
+  }
+  .snip-layout .snip-table--small td:nth-child(6) {
+    position: relative;
+    left: 100%;
+  }
+  .snip-layout .snip-discount__remove, .snip-layout .snip-product__remove {
+    margin: 0!important;
+  }
 }
 @media only screen and (max-width: 26em) {
   body.snip-open {
     position: fixed;
     max-width: 100%;
+  }
+  #snipcart-items-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #snipcart-items #snipcart-header-total {
+    font-size: 16px;
+    right: 22%;
+    top: 45px;
+  }
+  a.snipcart-user-profile {
+    font-size: 10px;
+    font-weight: 700;
   }
   #snipcart-items-header tr th:nth-child(5) {
     position: relative;
@@ -203,6 +237,7 @@ a.snipcart-user-profile {
     left: 200%!important;
   }
   #snipcart-title {
+    display: block;
     position: relative;
     top: 30px;
     text-align: left;
@@ -211,6 +246,5 @@ a.snipcart-user-profile {
   .sub-title {
     font-size: 18px!important;
     margin: 0!important;
-
   }
 }
