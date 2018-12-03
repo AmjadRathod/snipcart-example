@@ -157,11 +157,7 @@ $(document).ready(function(){
       $( ".js-submit" ).trigger( "click" );
     }
     if (page == 'order-details') {
-      // var curUrl = window.location.href;
-      // var dir = 'snipcart-example/';
-      // var url = curUrl.split(dir)[0];
-      // window.location.replace(url + dir + 'sucess/');
-      // window.location.replace('/snipcart-example/sucess/');
+      window.location.replace('/snipcart-example/sucess/');
     }
     if (page == 'empty-cart') {
       Snipcart.appView.close();
