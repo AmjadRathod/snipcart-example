@@ -185,6 +185,9 @@ a.snipcart-user-profile {
 #snipcart-plans-header {
   border: none!important;
 }
+#snip-layout-shipping-method #snipcart-next {
+  color: yellow;
+}
 /* mobile  */
 
 @media only screen and (max-width: 767px) {
