@@ -260,3 +260,22 @@ a.snipcart-user-profile {
     left: 170%!important;
   }
 }
+@media only screen and (max-width: 568px) {
+  #snipcart-items-header tr th:nth-child(5) {
+    position: relative;
+    left: 115%!important;
+  }
+  #snipcart-items-header tr th:nth-child(6) {
+    position: relative;
+    left: 125%!important;
+  }
+  .snip-layout .snip-table--small td:nth-child(5) {
+    margin-left: -5px;
+  }
+  .snip-layout .snip-discount__remove, .snip-layout .snip-product__remove {
+    margin-left: 66px;
+  }
+  #snipcart-items #snipcart-header-total {
+    left: 16%;
+  }
+}
