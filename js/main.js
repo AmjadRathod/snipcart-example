@@ -49,7 +49,7 @@ $(document).ready(function(){
     }
     if (page == 'cart-content') {
       // Snipcart.settings.onlyAllowGuests = false;
-      console.log('login');
+      $('#snipcart-items-header tr th:nth-child(5)').text('PRICE');
       $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">I&#39;M MEMBER</span></a></div></div>');
 
       $('.snipcart-user-logout').remove();
