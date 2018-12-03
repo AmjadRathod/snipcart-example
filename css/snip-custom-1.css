@@ -204,13 +204,14 @@ a.snipcart-user-profile {
   .snip-layout .snip-table--small td:nth-child(1) {
     float:left;
   }
-  .snip-layout .snip-table--small td:nth-child(2) {
+  .snip-layout .snip-table--small td:nth-child(5) {
     position: relative;
-    left: 65%;
+    padding: 0;
+    margin: 0;
   }
   .snip-layout .snip-table--small td:nth-child(6) {
     position: relative;
-    left: 25%;
+    left: 18%;
   }
   .snip-layout .snip-discount__remove, .snip-layout .snip-product__remove {
     margin: 0!important;
