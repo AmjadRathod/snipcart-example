@@ -88,7 +88,7 @@ a.snipcart-user-profile {
 /* total */
 #snipcart-items #snipcart-header-total {
   margin: 0;
-  position: relative;
+  position: absolute;
   right: 15%;
   background: none;
   color: #000!important;
