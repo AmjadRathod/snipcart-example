@@ -206,12 +206,12 @@ a.snipcart-user-profile {
   }
   .snip-layout .snip-table--small td:nth-child(5) {
     padding: 0;
+    position: absolute;
     margin: 0;
+    top: 30px;
     margin-left: 20px;
   }
   .snip-layout .snip-table--small td:nth-child(6) {
-    left: 50%;
-    top: -30px;
   }
   .snip-layout .snip-discount__remove, .snip-layout .snip-product__remove {
     margin: 0!important;
@@ -260,8 +260,5 @@ a.snipcart-user-profile {
   #snipcart-items-header tr th:nth-child(6) {
     position: relative;
     left: 170%!important;
-  }
-  .snip-layout .snip-table--small td:nth-child(6) {
-    left: 40%;
   }
 }
