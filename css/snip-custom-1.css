@@ -187,7 +187,11 @@ a.snipcart-user-profile {
 }
 /* mobile  */
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 26em) {
+  body.snip-open {
+    position: fixed;
+    max-width: 100%;
+  }
   .snip-layout .snip-table--small td, .snip-layout .snip-table--small th, .snip-layout .snip-table--small tr {
     display: inline-block!important;
   }
@@ -204,16 +208,12 @@ a.snipcart-user-profile {
   }
   .snip-layout .snip-table--small td:nth-child(6) {
     position: relative;
-    left: 100%;
+    left: 25%;
   }
   .snip-layout .snip-discount__remove, .snip-layout .snip-product__remove {
     margin: 0!important;
-  }
-}
-@media only screen and (max-width: 26em) {
-  body.snip-open {
-    position: fixed;
-    max-width: 100%;
+    right: 0!important;
+    left: 0!important;
   }
   #snipcart-items-header {
     padding-top: 0;
