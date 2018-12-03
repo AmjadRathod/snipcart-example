@@ -175,3 +175,7 @@ a.snipcart-user-profile {
   position: relative;
   top: -47px;
 }
+/* hide order details page */
+#snip-layout-order-details {
+  visibility: hidden;
+}
