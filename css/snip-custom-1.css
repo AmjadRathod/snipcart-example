@@ -179,3 +179,38 @@ a.snipcart-user-profile {
 #snip-layout-order-details {
   visibility: hidden;
 }
+#snipcart-steps {
+  visibility: hidden;
+}
+/* mobile  */
+
+@media only screen and (max-width: 48em) {
+  .snip-layout .snip-table--small td, .snip-layout .snip-table--small th, .snip-layout .snip-table--small tr {
+    display: inline-block!important;
+  }
+}
+@media only screen and (max-width: 26em) {
+  body.snip-open {
+    position: fixed;
+    max-width: 100%;
+  }
+  #snipcart-items-header tr th:nth-child(5) {
+    position: relative;
+    left: 170%!important;
+  }
+  #snipcart-items-header tr th:nth-child(6) {
+    position: relative;
+    left: 200%!important;
+  }
+  #snipcart-title {
+    position: relative;
+    top: 30px;
+    text-align: left;
+    font-size: 26px;
+  }
+  .sub-title {
+    font-size: 18px!important;
+    margin: 0!important;
+
+  }
+}
