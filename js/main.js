@@ -112,7 +112,7 @@ $(document).ready(function(){
     if (page == 'shipping-address') {
 
       // $('#snipcart-shipping-address-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
-      $('#snip-layout-shipping-method #snipcart-previous').text('<< Go Back');
+      $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
       $('#snipcart-next').text('Continue >>');
       $('#snipcart-next').css({"background": "blue", "color": "yellow"});
@@ -141,6 +141,7 @@ $(document).ready(function(){
     }
 
     if (page == 'shipping-method') {
+      $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-next').text('Continue >>');
       $( "#snipcart-next" ).css({"background":"blue", });
     }
