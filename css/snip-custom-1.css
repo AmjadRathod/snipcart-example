@@ -155,7 +155,7 @@ a.snipcart-user-profile {
   .snip-layout .snip-col {
     float: unset;
     position: relative;
-    left: 10%;
+    left: 20px;
     width: 50%!important;
   }
   #snipcart-billingaddress-form .snipcart-checkbox-field {
