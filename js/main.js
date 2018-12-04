@@ -87,8 +87,8 @@ $(document).ready(function(){
     if (page == 'login') {
       $('.sub-title').text(' ');
     }
-    if (page == 'billing-address') {
-
+    if (page == 'billing-address') {    
+      $('div [data-for="shippingSameAsBilling"]').insertBefore('div [data-for="name"]');
       $('#snipcart-billingaddress-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
       $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
