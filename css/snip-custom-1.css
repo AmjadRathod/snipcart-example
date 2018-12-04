@@ -198,6 +198,9 @@ a.snipcart-user-profile {
     position: fixed;
     max-width: 100%;
   }
+  #snipcart-login-form-container {
+    left: 0;
+  }
   .snip-layout .snip-table--small td, .snip-layout .snip-table--small th, .snip-layout .snip-table--small tr {
     display: inline-block!important;
   }
@@ -227,6 +230,7 @@ a.snipcart-user-profile {
   }
   .snip-layout .snip-table--small td:nth-child(6) {
     width: 25%;
+    text-align: center;
   }
   .snip-layout .snip-table--small td:nth-child(6) a {
     font-size: 0;
