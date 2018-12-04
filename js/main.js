@@ -3,17 +3,19 @@ document.addEventListener('snipcart.ready', function() {
   // $('#snipcart-items').append($("#snipcart-header-total"));
 });
 Snipcart.subscribe('cart.opened', function() {
-    var user = Snipcart.api.user.current();
-    if (user) {
-      $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
-      $( ".snipcart-user-profile" ).click(function() {
-        Snipcart.settings.onlyAllowGuests = false;
-      });
-    }
-    var email_width = $('.snip-header__user-text').width();
-    $('.snipcart-user-logout').css({"left": email_width + 30});
+  var user = Snipcart.api.user.current();
+  if (user) {
+    $('.snip-header__user-text').text("Signed-in as : " + user['email'])
+    $(".snipcart-user-profile").click(function() {
+      Snipcart.settings.onlyAllowGuests = false;
+    });
+  }
+  var email_width = $('.snip-header__user-text').width();
+  $('.snipcart-user-logout').css({
+    "left": email_width + 30
+  });
 });
-$(document).ready(function(){
+$(document).ready(function() {
   Snipcart.api.cart.currency('gbp');
   var checkout = Snipcart.appView.getActiveStep();
   // $('#snipcart-show-discount-box').attr('id', 'newId');
@@ -23,7 +25,7 @@ $(document).ready(function(){
     Snipcart.appView.hideLoader();
     $('#snipcart-show-discount-box').attr('id', 'newId');
   }
-  Snipcart.subscribe('page.changed', function (page) {
+  Snipcart.subscribe('page.changed', function(page) {
     Snipcart.appView.setTitle('Reliaprint.co.uk');
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     Snipcart.appView.hideSteps();
@@ -32,8 +34,8 @@ $(document).ready(function(){
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
     var user = Snipcart.api.user.current();
     if (user) {
-      $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
-      $( ".snipcart-user-profile" ).click(function() {
+      $('.snip-header__user-text').text("Signed-in as : " + user['email'])
+      $(".snipcart-user-profile").click(function() {
         Snipcart.settings.onlyAllowGuests = false;
       });
     }
@@ -56,7 +58,9 @@ $(document).ready(function(){
       $("#snipcart-current-user").append('<a href="#" class="snipcart-user-logout">(logout/change)</a>');
       $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue">&lt;&lt; Add another Order</a>');
       var email_width = $('.snip-header__user-text').width();
-      $('.snipcart-user-logout').css({"left": email_width + 30});
+      $('.snipcart-user-logout').css({
+        "left": email_width + 30
+      });
 
       $("#snipcart-items-list").last().append('<div id="snipcart-header-total" class="snip-header__total"><span class="snip-header__total-label">ORDER TOTAL:</span><span id="snipcart-amount"></span></div>');
       $('#snipcart-actions .js-next').text('DELIVERY >>');
@@ -64,25 +68,33 @@ $(document).ready(function(){
       $('#snipcart-items-list #snipcart-header-total #snipcart-amount').text(total);
       var user = Snipcart.api.user.current();
       if (user) {
-        $('.snip-header__user-text').text("Signed-in as : "+ user['email'])
-        $( ".snipcart-user-profile" ).click(function() {
+        $('.snip-header__user-text').text("Signed-in as : " + user['email'])
+        $(".snipcart-user-profile").click(function() {
           Snipcart.settings.onlyAllowGuests = false;
         });
       }
 
       if (Snipcart.currentUser) {
-        $( ".snipcart-user-profile" ).css({"visibility": "hidden"});
-        $( ".snipcart-user-logout" ).css({"visibility": "visible"});
-      }
-      else {
-        $( ".snipcart-user-profile" ).css({"visibility": "visible"});
-        $( ".snipcart-user-logout" ).css({"visibility": "hidden"});
+        $(".snipcart-user-profile").css({
+          "visibility": "hidden"
+        });
+        $(".snipcart-user-logout").css({
+          "visibility": "visible"
+        });
+      } else {
+        $(".snipcart-user-profile").css({
+          "visibility": "visible"
+        });
+        $(".snipcart-user-logout").css({
+          "visibility": "hidden"
+        });
       }
       console.log('anb');
       // $('#snipcart-show-discount-box').attr('id', 'newId');
-    }
-    else {
-      $('#snipcart-cartitems-continue-top').css({"display": "none"});
+    } else {
+      $('#snipcart-cartitems-continue-top').css({
+        "display": "none"
+      });
     }
     if (page == 'login') {
       $('.sub-title').text(' ');
@@ -94,10 +106,19 @@ $(document).ready(function(){
       $('div [data-for="province"]').insertAfter('div [data-for="email"]');
       $('#snipcart-billingaddress-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
       $('#snipcart-previous').text('<< Go Back');
-      $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
+      $('#snipcart-previous').css({
+        "background": "brown",
+        "color": "yellow"
+      });
       $('#snipcart-next').text('Continue >>');
-      $('#snipcart-next').css({"background": "blue", "color": "yellow"});
-      $('#snipcart-previous').css({"background": "blue", "color": "yellow"});
+      $('#snipcart-next').css({
+        "background": "blue",
+        "color": "yellow"
+      });
+      $('#snipcart-previous').css({
+        "background": "blue",
+        "color": "yellow"
+      });
       $('.sub-title').text('Where do we deliver:');
       // lable text
       $("#snipcart-billingaddress-form label[for='snip-name']").text('YOUR NAME :');
@@ -115,6 +136,11 @@ $(document).ready(function(){
     if (page == 'shipping-address') {
 
       // $('#snipcart-shipping-address-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
+      Snipcart.subscribe('page.validating', function(ev, data) {
+        if (ev.type == 'shipping-address' && data.phone.substr(5, 15) != '/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;') {
+          ev.addError('Email', 'Please enter Valid Email');
+        }
+      });
 
       $('<div data-for="shippingSameAsBilling" class="snip-form__container snip-form__container--checkbox snipcart-checkbox-field"><input type="checkbox" name="shippingSameAsBilling" id="snip-shippingSameAsBilling" class="snip-product__customfields-checkbox"><label for="snip-shippingSameAsBilling" class="snip-form__label">INVOICE ADDRESS same as DELIVERY ADDRESS</label></div>').insertBefore('div [data-for="name"]');
       $('div [data-for="phone"]').insertAfter('div [data-for="company"]');
@@ -122,10 +148,19 @@ $(document).ready(function(){
       $('div [data-for="province"]').remove();
       $('div [data-for="country"]').insertAfter('div [data-for="address2"]');
       $('#snipcart-previous').text('<< Go Back');
-      $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
+      $('#snipcart-previous').css({
+        "background": "brown",
+        "color": "yellow"
+      });
       $('#snipcart-next').text('Continue >>');
-      $('#snipcart-next').css({"background": "blue", "color": "yellow"});
-      $('#snipcart-previous').css({"background": "blue", "color": "yellow"});
+      $('#snipcart-next').css({
+        "background": "blue",
+        "color": "yellow"
+      });
+      $('#snipcart-previous').css({
+        "background": "blue",
+        "color": "yellow"
+      });
       $('.sub-title').text('Invoice Address');
       // lable text
       $("#snipcart-shipping-address-form label[for='snip-name']").text('INVOICE TO :');
@@ -142,21 +177,32 @@ $(document).ready(function(){
 
     if (page == 'payment-method') {
       $('#snipcart-previous').text('<< Go Back');
-      $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
+      $('#snipcart-previous').css({
+        "background": "brown",
+        "color": "yellow"
+      });
       $('#snipcart-paymentmethod-pay').text('PLACE ORDER');
-      $('#snipcart-paymentmethod-pay').css({"background": "#F27746", "color": "yellow"});
+      $('#snipcart-paymentmethod-pay').css({
+        "background": "#F27746",
+        "color": "yellow"
+      });
       $('.sub-title').text('Payment Method');
-      $('.snip-product').css({"display": "none", "color": "yellow"});
+      $('.snip-product').css({
+        "display": "none",
+        "color": "yellow"
+      });
     }
 
     if (page == 'shipping-method') {
       $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-next').text('Continue >>');
-      $( "#snipcart-next" ).css({"background":"blue", });
+      $("#snipcart-next").css({
+        "background": "blue",
+      });
     }
     if (page == 'login') {
       $("#snipcart-login-form-container form").append('<a href="#" id="snipcart-login-cancel" class="snip-btn snip-btn--full">Cancel</a>');
-      $( "#snipcart-login-cancel" ).click(function() {
+      $("#snipcart-login-cancel").click(function() {
         var curUrl = window.location.href;
         var dir = '#!/';
         var url = curUrl.split(dir)[0];
@@ -164,7 +210,7 @@ $(document).ready(function(){
       });
     }
     if (page == 'order-confirm') {
-      $( ".js-submit" ).trigger( "click" );
+      $(".js-submit").trigger("click");
     }
     if (page == 'order-details') {
       window.location.replace('/snipcart-example/sucess/');
@@ -172,6 +218,6 @@ $(document).ready(function(){
     if (page == 'empty-cart') {
       Snipcart.appView.close();
     }
-      console.log(page);
+    console.log(page);
   });
 });
