@@ -141,11 +141,11 @@ $(document).ready(function() {
           ev.addError('Email', 'Please enter Valid Email');
         }
       });
-
-      $('<div data-for="shippingSameAsBilling" class="snip-form__container snip-form__container--checkbox snipcart-checkbox-field"><input type="checkbox" name="shippingSameAsBilling" id="snip-shippingSameAsBilling" class="snip-product__customfields-checkbox"><label for="snip-shippingSameAsBilling" class="snip-form__label">INVOICE ADDRESS same as DELIVERY ADDRESS</label></div>').insertBefore('div [data-for="name"]');
       $('div [data-for="phone"]').insertAfter('div [data-for="company"]');
-      $('div [data-for="phone"] label[for="snip-phone"]').text("INVOICE EMAIL ADDRESS *");
+      $('#snip-layout-shipping-address label[for="snip-phone"]').text("INVOICE EMAIL ADDRESS *");
       $('div [data-for="province"]').remove();
+      $('<div data-for="shippingSameAsBilling" class="snip-form__container snip-form__container--checkbox snipcart-checkbox-field"><input type="checkbox" name="shippingSameAsBilling" id="snip-shippingSameAsBilling" class="snip-product__customfields-checkbox"><label for="snip-shippingSameAsBilling" class="snip-form__label">INVOICE ADDRESS same as DELIVERY ADDRESS</label></div>').insertBefore('div [data-for="name"]');
+
       $('div [data-for="country"]').insertAfter('div [data-for="address2"]');
       $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-previous').css({
