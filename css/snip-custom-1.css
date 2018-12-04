@@ -230,6 +230,7 @@ a.snipcart-user-profile {
   }
   .snip-layout .snip-table--small td:nth-child(6) a {
     font-size: 0;
+    position: unset;
   }
 
   /* .snip-layout .snip-table--small td:nth-child(6) {
@@ -245,7 +246,9 @@ a.snipcart-user-profile {
   #snipcart-items #snipcart-header-total {
     font-size: 16px;
     position: relative;
-    left: 23%;
+    left: 0;
+    text-align: right;
+    width: 73%;
   }
   a.snipcart-user-profile {
     font-size: 10px;
