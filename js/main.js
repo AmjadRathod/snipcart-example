@@ -18,7 +18,7 @@ Snipcart.subscribe('cart.opened', function() {
 $(document).ready(function() {
   Snipcart.api.cart.currency('gbp');
   var checkout = Snipcart.appView.getActiveStep();
-  // $('#snipcart-show-discount-box').attr('id', 'newId');
+  var txtName="",txtCompany="",txtEmail="",txtAddress1="",txtAddress2="",txtCity="",txtPostCode="";
   if (checkout == 'checkout') {
     Snipcart.appView.setTitle('Reliaprint.co.uk');
     Snipcart.appView.hideSteps();
@@ -32,27 +32,6 @@ $(document).ready(function() {
     Snipcart.appView.hideLoader();
     $('.sub-title').remove();
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
-    var txtName="",txtCompany="",txtEmail="",txtAddress1="",txtAddress2="",txtCity="",txtPostCode="";
-    txtName = $("#snipcart-billingaddress-form #snip-name").val();
-    txtCompany = $("#snipcart-billingaddress-form #snip-company").val();
-    txtAddress1 = $("#snipcart-billingaddress-form #snip-address1").val();
-    txtAddress2 = $("#snipcart-billingaddress-form #snip-address2").val();
-    txtEmail = $("#snipcart-billingaddress-form #snip-email").val();
-    txtCity = $("#snipcart-billingaddress-form #snip-city").val();
-    txtPostCode = $("#snipcart-billingaddress-form #snip-postalCode").val();
-
-    $('#snip-layout-shipping-address #snip-shippingSameAsBilling').click(function() {
-      if ($(this).prop('checked') == true) {
-
-        $("#snipcart-shipping-address-form #snip-name").val(txtName);
-        $("#snipcart-shipping-address-form #snip-company").val(txtCompany);
-        $("#snipcart-shipping-address-form #snip-address1").val(txtAddress1);
-        $("#snipcart-shipping-address-form #snip-address2").val(txtAddress2);
-        $("#snipcart-shipping-address-form #snip-phone").val(txtEmail);
-        $("#snipcart-shipping-address-form #snip-city").val(txtCity);
-        $("#snipcart-shipping-address-form #snip-postalCode").val(txtPostCode);
-      }
-    });
 
     var user = Snipcart.api.user.current();
     if (user) {
@@ -153,6 +132,13 @@ $(document).ready(function() {
       $("#snipcart-billingaddress-form label[for='snip-postalCode']").text('POSTCODE* :');
       $("#snipcart-billingaddress-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
       $("#snipcart-billingaddress-form label[for='snip-province']").text('ANY SPECIAL DELIVERY INSTRUCTIONS :');
+      txtName = $("#snipcart-billingaddress-form #snip-name").val();
+      txtCompany = $("#snipcart-billingaddress-form #snip-company").val();
+      txtAddress1 = $("#snipcart-billingaddress-form #snip-address1").val();
+      txtAddress2 = $("#snipcart-billingaddress-form #snip-address2").val();
+      txtEmail = $("#snipcart-billingaddress-form #snip-email").val();
+      txtCity = $("#snipcart-billingaddress-form #snip-city").val();
+      txtPostCode = $("#snipcart-billingaddress-form #snip-postalCode").val();
     }
 
     if (page == 'shipping-address') {
@@ -186,8 +172,18 @@ $(document).ready(function() {
       $("#snipcart-shipping-address-form label[for='snip-city']").text('TOWN CITY* :');
       $("#snipcart-shipping-address-form label[for='snip-postalCode']").text('INVOICE POSTCODE* :');
       $('#snip-layout-shipping-address label[for="snip-phone"]').text("INVOICE EMAIL ADDRESS *");
-      // $("#snipcart-shipping-address-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
-      // $("#snipcart-shipping-address-form label[for='snip-province']").text('ANY SPECIAL DELIVERY INSTRUCTIONS :');
+      $('#snip-layout-shipping-address #snip-shippingSameAsBilling').click(function() {
+        if ($(this).prop('checked') == true) {
+
+          $("#snipcart-shipping-address-form #snip-name").val(txtName);
+          $("#snipcart-shipping-address-form #snip-company").val(txtCompany);
+          $("#snipcart-shipping-address-form #snip-address1").val(txtAddress1);
+          $("#snipcart-shipping-address-form #snip-address2").val(txtAddress2);
+          $("#snipcart-shipping-address-form #snip-phone").val(txtEmail);
+          $("#snipcart-shipping-address-form #snip-city").val(txtCity);
+          $("#snipcart-shipping-address-form #snip-postalCode").val(txtPostCode);
+        }
+      });
     }
 
     if (page == 'payment-method') {
