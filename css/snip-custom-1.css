@@ -158,10 +158,6 @@ a.snipcart-user-profile {
     left: 20px;
     width: 50%!important;
   }
-  #snipcart-billingaddress-form .snipcart-checkbox-field {
-    position: absolute;
-    top: -600px;
-  }
 }
 /* ḷogin btn */
 #snipcart-login-submit, #snipcart-login-cancel {
