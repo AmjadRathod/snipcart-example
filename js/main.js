@@ -140,7 +140,8 @@ $(document).ready(function() {
         txtEmail = $("#snipcart-billingaddress-form #snip-email").val();
         txtCity = $("#snipcart-billingaddress-form #snip-city").val();
         txtPostCode = $("#snipcart-billingaddress-form #snip-postalCode").val();
-        }
+        }, function(){
+
       });
     }
 
@@ -232,6 +233,9 @@ $(document).ready(function() {
     if (page == 'empty-cart') {
       Snipcart.appView.close();
     }
+    console.log(page);
+    console.log(page);
+    console.log(page);
     console.log(page);
   });
 });
