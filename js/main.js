@@ -1,7 +1,3 @@
-document.addEventListener('snipcart.ready', function() {
-  // $('#snipcart-title').text('Reliaprint.co.uk')
-  // $('#snipcart-items').append($("#snipcart-header-total"));
-});
 Snipcart.subscribe('cart.opened', function() {
   var user = Snipcart.api.user.current();
   if (user) {
@@ -90,8 +86,6 @@ $(document).ready(function() {
           "visibility": "hidden"
         });
       }
-      console.log('anb');
-      // $('#snipcart-show-discount-box').attr('id', 'newId');
     } else {
       $('#snipcart-cartitems-continue-top').css({
         "display": "none"
@@ -146,7 +140,6 @@ $(document).ready(function() {
     }
 
     if (page == 'shipping-address') {
-
       $('div [data-for="phone"]').insertAfter('div [data-for="company"]');
       $('div [data-for="province"]').remove();
       $('<div data-for="shippingSameAsBilling" class="snip-form__container snip-form__container--checkbox snipcart-checkbox-field"><input type="checkbox" name="shippingSameAsBilling" id="snip-shippingSameAsBilling" class="snip-product__customfields-checkbox"><label for="snip-shippingSameAsBilling" class="snip-form__label">INVOICE ADDRESS same as DELIVERY ADDRESS</label></div>').insertBefore('div [data-for="name"]');
@@ -178,7 +171,6 @@ $(document).ready(function() {
       $('#snip-layout-shipping-address label[for="snip-phone"]').text("INVOICE EMAIL ADDRESS *");
       $('#snip-layout-shipping-address #snip-shippingSameAsBilling').click(function() {
         if ($(this).prop('checked') == true) {
-
           $("#snipcart-shipping-address-form #snip-name").val(txtName);
           $("#snipcart-shipping-address-form #snip-company").val(txtCompany);
           $("#snipcart-shipping-address-form #snip-address1").val(txtAddress1);
@@ -186,6 +178,7 @@ $(document).ready(function() {
           $("#snipcart-shipping-address-form #snip-phone").val(txtEmail);
           $("#snipcart-shipping-address-form #snip-city").val(txtCity);
           $("#snipcart-shipping-address-form #snip-postalCode").val(txtPostCode);
+          $("#snipcart-next").trigger("click");
         }
       });
     }
@@ -233,9 +226,5 @@ $(document).ready(function() {
     if (page == 'empty-cart') {
       Snipcart.appView.close();
     }
-    console.log(page);
-    console.log(page);
-    console.log(page);
-    console.log(page);
   });
 });
