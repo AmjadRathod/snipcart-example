@@ -1,12 +1,23 @@
 /* custom snipcart css file by Amjad Rathod */
 /* cart background */
+#snipcart-cvc-trigger {
+  display: none;
+}
+#snipcart-sub-content {
+  padding-top: 20px;
+}
 .snip-layout .snip-layout__main-container {
   background: #f7f7eb;
+}
+.snip-layout .snip-header__title {
+  margin: 0;
 }
 .snip-layout .snip-header__user {
   background: none;
   text-align: left;
   font-size: 16px;
+  padding: 0;
+  padding-left: 40px;
 }
 a.snipcart-user-profile {
   background: blue!important;
@@ -17,7 +28,7 @@ a.snipcart-user-profile {
 .snip-layout .snip-header {
   background: none;
   position: relative;
-  top: -35px;
+  top: -20px;
 }
 /* title color */
 #snipcart-title {
@@ -53,6 +64,7 @@ a.snipcart-user-profile {
   margin-left: 40px!important;
   font-size: 22px!important;
   text-transform: none!important;
+  padding-top: 10px!important;
 }
 /* next - devlivery */
 #snipcart-actions #snipcart-cartitems-continue-top {
@@ -128,9 +140,8 @@ a.snipcart-user-profile {
   visibility: hidden;
 }
 .snipcart-user-logout {
-  position: absolute;
-  left: 220px;
-  top: 10px;
+  position: relative;
+  top: -23px;
 }
 #snipcart-previous {
   background: brown!important;
@@ -247,6 +258,7 @@ a.snipcart-user-profile {
     font-size: 16px;
     position: relative;
     left: 0;
+    padding-top: 20px;
     text-align: right;
     width: 73%;
   }

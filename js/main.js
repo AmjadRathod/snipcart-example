@@ -1,4 +1,6 @@
 Snipcart.subscribe('cart.opened', function() {
+  Snipcart.appView.setTitle('');
+  $('#snipcart-title').append('<img src="/snipcart-example/img/logo2.jpeg" alt="Reliaprint.co.uk">');
   var user = Snipcart.api.user.current();
   if (user) {
     $('.snip-header__user-text').text("Signed-in as : " + user['email'])
@@ -8,26 +10,27 @@ Snipcart.subscribe('cart.opened', function() {
   }
   var email_width = $('.snip-header__user-text').width();
   $('.snipcart-user-logout').css({
-    "left": email_width + 30
+    "left": email_width + 50
   });
 });
 $(document).ready(function() {
   Snipcart.api.cart.currency('gbp');
   var checkout = Snipcart.appView.getActiveStep();
   var txtName="",txtCompany="",txtEmail="",txtAddress1="",txtAddress2="",txtCity="",txtPostCode="";
+  $('#snipcart-title').text('aa');
   if (checkout == 'checkout') {
-    Snipcart.appView.setTitle('Reliaprint.co.uk');
     Snipcart.appView.hideSteps();
     Snipcart.appView.hideLoader();
     $('#snipcart-show-discount-box').attr('id', 'newId');
   }
   Snipcart.subscribe('page.changed', function(page) {
-    Snipcart.appView.setTitle('Reliaprint.co.uk');
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
+
     Snipcart.appView.hideSteps();
     Snipcart.appView.hideLoader();
     $('.sub-title').remove();
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
+    $("#snipcart-current-user").insertAfter('#snipcart-header');
 
     var user = Snipcart.api.user.current();
     if (user) {
@@ -56,8 +59,7 @@ $(document).ready(function() {
       $("#snipcart-actions").append('<a id="snipcart-cartitems-continue-top" class="snip-btn snip-header__continue">&lt;&lt; Add another Order</a>');
       var email_width = $('.snip-header__user-text').width();
       $('.snipcart-user-logout').css({
-        "left": email_width + 30
-      });
+        "left": email_width + 60 });
 
       $("#snipcart-items-list").last().append('<div id="snipcart-header-total" class="snip-header__total"><span class="snip-header__total-label">ORDER TOTAL:</span><span id="snipcart-amount"></span></div>');
       $('#snipcart-actions .js-next').text('DELIVERY >>');
