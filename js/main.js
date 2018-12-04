@@ -132,13 +132,16 @@ $(document).ready(function() {
       $("#snipcart-billingaddress-form label[for='snip-postalCode']").text('POSTCODE* :');
       $("#snipcart-billingaddress-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
       $("#snipcart-billingaddress-form label[for='snip-province']").text('ANY SPECIAL DELIVERY INSTRUCTIONS :');
-      txtName = $("#snipcart-billingaddress-form #snip-name").val();
-      txtCompany = $("#snipcart-billingaddress-form #snip-company").val();
-      txtAddress1 = $("#snipcart-billingaddress-form #snip-address1").val();
-      txtAddress2 = $("#snipcart-billingaddress-form #snip-address2").val();
-      txtEmail = $("#snipcart-billingaddress-form #snip-email").val();
-      txtCity = $("#snipcart-billingaddress-form #snip-city").val();
-      txtPostCode = $("#snipcart-billingaddress-form #snip-postalCode").val();
+      $("#snipcart-next").hover(function(){
+        txtName = $("#snipcart-billingaddress-form #snip-name").val();
+        txtCompany = $("#snipcart-billingaddress-form #snip-company").val();
+        txtAddress1 = $("#snipcart-billingaddress-form #snip-address1").val();
+        txtAddress2 = $("#snipcart-billingaddress-form #snip-address2").val();
+        txtEmail = $("#snipcart-billingaddress-form #snip-email").val();
+        txtCity = $("#snipcart-billingaddress-form #snip-city").val();
+        txtPostCode = $("#snipcart-billingaddress-form #snip-postalCode").val();
+        }
+      });
     }
 
     if (page == 'shipping-address') {
