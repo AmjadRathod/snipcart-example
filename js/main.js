@@ -32,6 +32,15 @@ $(document).ready(function() {
     Snipcart.appView.hideLoader();
     $('.sub-title').remove();
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
+    var txtName="",txtCompany="",txtEmail="",txtAddress1="",txtAddress2="",txtCity="",txtPostCode="";
+    txtName = $("#snipcart-billingaddress-form #snip-name").val();
+    txtCompany = $("#snipcart-billingaddress-form #snip-company").val();
+    txtAddress1 = $("#snipcart-billingaddress-form #snip-address1").val();
+    txtAddress2 = $("#snipcart-billingaddress-form #snip-address2").val();
+    txtEmail = $("#snipcart-billingaddress-form #snip-email").val();
+    txtCity = $("#snipcart-billingaddress-form #snip-city").val();
+    txtPostCode = $("#snipcart-billingaddress-form #snip-postalCode").val();
+
     var user = Snipcart.api.user.current();
     if (user) {
       $('.snip-header__user-text').text("Signed-in as : " + user['email'])
@@ -135,12 +144,19 @@ $(document).ready(function() {
 
     if (page == 'shipping-address') {
 
-      // $('#snipcart-shipping-address-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
-      Snipcart.subscribe('page.validating', function(ev, data) {
-        if (ev.type == 'shipping-address' && data.phone.substr(5, 15) != '/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;') {
-          ev.addError('Email', 'Please enter Valid Email');
+      $('#snip-layout-shipping-address #snip-shippingSameAsBilling').click(function() {
+        if ($(this).prop('checked') == true) {
+          $("#snipcart-shipping-address-form #snip-name").val(txtName);
+          $("#snipcart-shipping-address-form #snip-company").val(txtCompany);
+          $("#snipcart-shipping-address-form #snip-address1").val(txtAddress1);
+          $("#snipcart-shipping-address-form #snip-address2").val(txtAddress2);
+          $("#snipcart-shipping-address-form #snip-phone").val(txtEmail);
+          $("#snipcart-shipping-address-form #snip-city").val(txtCity);
+          $("#snipcart-shipping-address-form #snip-postalCode").val(txtPostCode);
         }
       });
+
+
       $('div [data-for="phone"]').insertAfter('div [data-for="company"]');
       $('div [data-for="province"]').remove();
       $('<div data-for="shippingSameAsBilling" class="snip-form__container snip-form__container--checkbox snipcart-checkbox-field"><input type="checkbox" name="shippingSameAsBilling" id="snip-shippingSameAsBilling" class="snip-product__customfields-checkbox"><label for="snip-shippingSameAsBilling" class="snip-form__label">INVOICE ADDRESS same as DELIVERY ADDRESS</label></div>').insertBefore('div [data-for="name"]');
