@@ -91,6 +91,7 @@ $(document).ready(function(){
       $('div [data-for="shippingSameAsBilling"]').insertBefore('div [data-for="name"]');
       $('div [data-for="country"]').insertAfter('div [data-for="address2"]');
       $('div [data-for="postalCode"]').insertAfter('div [data-for="city"]');
+      $('div [data-for="province"]').insertAfter('div [data-for="email"]');
       $('#snipcart-billingaddress-form .snipcart-checkbox-field label').text('DELIVERY ADDRESS same as INVOICE ADDRESS');
       $('#snipcart-previous').text('<< Go Back');
       $('#snipcart-previous').css({"background": "brown", "color": "yellow"});
