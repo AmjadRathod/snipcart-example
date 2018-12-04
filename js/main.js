@@ -41,6 +41,19 @@ $(document).ready(function() {
     txtCity = $("#snipcart-billingaddress-form #snip-city").val();
     txtPostCode = $("#snipcart-billingaddress-form #snip-postalCode").val();
 
+    $('#snip-layout-shipping-address #snip-shippingSameAsBilling').click(function() {
+      if ($(this).prop('checked') == true) {
+
+        $("#snipcart-shipping-address-form #snip-name").val(txtName);
+        $("#snipcart-shipping-address-form #snip-company").val(txtCompany);
+        $("#snipcart-shipping-address-form #snip-address1").val(txtAddress1);
+        $("#snipcart-shipping-address-form #snip-address2").val(txtAddress2);
+        $("#snipcart-shipping-address-form #snip-phone").val(txtEmail);
+        $("#snipcart-shipping-address-form #snip-city").val(txtCity);
+        $("#snipcart-shipping-address-form #snip-postalCode").val(txtPostCode);
+      }
+    });
+
     var user = Snipcart.api.user.current();
     if (user) {
       $('.snip-header__user-text').text("Signed-in as : " + user['email'])
@@ -143,19 +156,6 @@ $(document).ready(function() {
     }
 
     if (page == 'shipping-address') {
-
-      $('#snip-layout-shipping-address #snip-shippingSameAsBilling').click(function() {
-        if ($(this).prop('checked') == true) {
-          $("#snipcart-shipping-address-form #snip-name").val(txtName);
-          $("#snipcart-shipping-address-form #snip-company").val(txtCompany);
-          $("#snipcart-shipping-address-form #snip-address1").val(txtAddress1);
-          $("#snipcart-shipping-address-form #snip-address2").val(txtAddress2);
-          $("#snipcart-shipping-address-form #snip-phone").val(txtEmail);
-          $("#snipcart-shipping-address-form #snip-city").val(txtCity);
-          $("#snipcart-shipping-address-form #snip-postalCode").val(txtPostCode);
-        }
-      });
-
 
       $('div [data-for="phone"]').insertAfter('div [data-for="company"]');
       $('div [data-for="province"]').remove();
