@@ -142,7 +142,6 @@ $(document).ready(function() {
         }
       });
       $('div [data-for="phone"]').insertAfter('div [data-for="company"]');
-      $('#snip-layout-shipping-address label[for="snip-phone"]').text("INVOICE EMAIL ADDRESS *");
       $('div [data-for="province"]').remove();
       $('<div data-for="shippingSameAsBilling" class="snip-form__container snip-form__container--checkbox snipcart-checkbox-field"><input type="checkbox" name="shippingSameAsBilling" id="snip-shippingSameAsBilling" class="snip-product__customfields-checkbox"><label for="snip-shippingSameAsBilling" class="snip-form__label">INVOICE ADDRESS same as DELIVERY ADDRESS</label></div>').insertBefore('div [data-for="name"]');
 
@@ -165,12 +164,12 @@ $(document).ready(function() {
       // lable text
       $("#snipcart-shipping-address-form label[for='snip-name']").text('INVOICE TO :');
       $("#snipcart-shipping-address-form label[for='snip-company']").text('COMPANY or ORGANISATION NAME (optional) :');
-      $("#snipcart-shipping-address-form label[for='snip-phone']").text('YOUR PHONE NUMBER (optional) :');
       $("#snipcart-shipping-address-form label[for='snip-address1']").text('INVOICE ADDRESS LINE 1* :');
       $("#snipcart-shipping-address-form label[for='snip-address2']").text('INVOICE ADDRESS LINE 2 :');
       $("#snipcart-shipping-address-form label[for='snip-country']").text('COUNTRY (optional) :');
       $("#snipcart-shipping-address-form label[for='snip-city']").text('TOWN CITY* :');
       $("#snipcart-shipping-address-form label[for='snip-postalCode']").text('INVOICE POSTCODE* :');
+      $('#snip-layout-shipping-address label[for="snip-phone"]').text("INVOICE EMAIL ADDRESS *");
       // $("#snipcart-shipping-address-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
       // $("#snipcart-shipping-address-form label[for='snip-province']").text('ANY SPECIAL DELIVERY INSTRUCTIONS :');
     }
