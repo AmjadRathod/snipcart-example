@@ -1,6 +1,6 @@
 Snipcart.subscribe('cart.opened', function() {
   Snipcart.appView.setTitle('');
-  $('#snipcart-title').append('<img src="/snipcart-example/img/logo2.jpeg" alt="Reliaprint.co.uk">');
+  $('#snipcart-title').append('<img src="/snipcart/img/logo2.jpeg" alt="Reliaprint.co.uk">');
   var user = Snipcart.api.user.current();
   if (user) {
     $('.snip-header__user-text').text("Signed-in as : " + user['email'])
@@ -13,6 +13,7 @@ Snipcart.subscribe('cart.opened', function() {
     "left": email_width + 50
   });
 });
+
 $(document).ready(function() {
   Snipcart.api.cart.currency('gbp');
   var checkout = Snipcart.appView.getActiveStep();
@@ -23,6 +24,12 @@ $(document).ready(function() {
     Snipcart.appView.hideLoader();
     $('#snipcart-show-discount-box').attr('id', 'newId');
   }
+  Snipcart.subscribe('item.removed', function (item) {
+  if (Snipcart.cartIsEmpty()) {
+      $('.sub-title').remove();
+      $('.sub-title').css({"display":"none", "visiblity":"hidden"});
+    }
+  });
   Snipcart.subscribe('page.changed', function(page) {
     $("#snipcart-header").append('<p class="sub-title">YOUR CART for approval</p>');
 
@@ -39,6 +46,9 @@ $(document).ready(function() {
         Snipcart.settings.onlyAllowGuests = false;
       });
     }
+    Snipcart.appView.setTitle('');
+    $('#snipcart-title img').remove();
+    $('#snipcart-title').append('<img src="/snipcart/img/logo2.jpeg" alt="Reliaprint.co.uk">');
     if (page == 'customer/orders-history') {
       var curUrl = window.location.href;
       var dir = '#!/';
@@ -52,7 +62,7 @@ $(document).ready(function() {
     if (page == 'cart-content') {
       // Snipcart.settings.onlyAllowGuests = false;
       $('#snipcart-items-header tr th:nth-child(5)').text('PRICE');
-      $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">I&#39;M MEMBER</span></a></div></div>');
+      $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">I&#39;M A MEMBER</span></a></div></div>');
 
       $('.snipcart-user-logout').remove();
       $("#snipcart-current-user").append('<a href="#" class="snipcart-user-logout">(logout/change)</a>');
@@ -117,13 +127,19 @@ $(document).ready(function() {
         "color": "yellow"
       });
       $('.sub-title').text('Where do we deliver:');
+      //remove
+      $('#snipcart-billingaddress-form div [data-for="province"] input').remove();
+      $('#snipcart-billingaddress-form div [data-for="province"]').append('<textarea rows="6" cols="50" id="snip-province" name="province" value="" class="snipcart-state"></textarea>');
+      $('#snipcart-billingaddress-form div [data-for="country"] select').remove();
+      $('#snipcart-billingaddress-form div [data-for="country"]').append('<input type="text" id="snip-country" name="country" class="snipcart-country">');
+
       // lable text
       $("#snipcart-billingaddress-form label[for='snip-name']").text('YOUR NAME :');
       $("#snipcart-billingaddress-form label[for='snip-company']").text('COMPANY or ORGANISATION NAME :');
       $("#snipcart-billingaddress-form label[for='snip-phone']").text('YOUR PHONE NUMBER (optional) :');
       $("#snipcart-billingaddress-form label[for='snip-address1']").text('ADDRESS LINE 1* :');
       $("#snipcart-billingaddress-form label[for='snip-address2']").text('ADDRESS LINE 2 :');
-      $("#snipcart-billingaddress-form label[for='snip-country']").text('COUNTRY (optional) :');
+      $("#snipcart-billingaddress-form label[for='snip-country']").text('COUNTY (optional) :');
       $("#snipcart-billingaddress-form label[for='snip-city']").text('TOWN CITY* :');
       $("#snipcart-billingaddress-form label[for='snip-postalCode']").text('POSTCODE* :');
       $("#snipcart-billingaddress-form label[for='snip-email']").text('YOUR EMAIL ADDRESS* :');
@@ -140,11 +156,24 @@ $(document).ready(function() {
 
       });
     }
+    if (page == 'forgot-password') {
+        $('.sub-title').remove();
+        $('#snipcart-forgotpassword-back-btn').prop("id", "snipcart-forgotpassword-back-btn-2");
+        $("#snipcart-forgotpassword-back-btn-2").click(function(){
+          var curUrl = window.location.href;
+          var dir = '#!/';
+          var url = curUrl.split(dir)[0];
+          window.location.replace(url + dir + 'cart');
+        });
+    }
 
     if (page == 'shipping-address') {
       $('div [data-for="phone"]').insertAfter('div [data-for="company"]');
       $('div [data-for="province"]').remove();
       $('<div data-for="shippingSameAsBilling" class="snip-form__container snip-form__container--checkbox snipcart-checkbox-field"><input type="checkbox" name="shippingSameAsBilling" id="snip-shippingSameAsBilling" class="snip-product__customfields-checkbox"><label for="snip-shippingSameAsBilling" class="snip-form__label">INVOICE ADDRESS same as DELIVERY ADDRESS</label></div>').insertBefore('div [data-for="name"]');
+
+      $('#snipcart-shipping-address-form div [data-for="country"] select').remove();
+      $('#snipcart-shipping-address-form div [data-for="country"]').append('<input type="text" id="snip-country" name="country" class="snipcart-country">');
 
       $('div [data-for="country"]').insertAfter('div [data-for="address2"]');
       $('#snipcart-previous').text('<< Go Back');
@@ -167,7 +196,7 @@ $(document).ready(function() {
       $("#snipcart-shipping-address-form label[for='snip-company']").text('COMPANY or ORGANISATION NAME (optional) :');
       $("#snipcart-shipping-address-form label[for='snip-address1']").text('INVOICE ADDRESS LINE 1* :');
       $("#snipcart-shipping-address-form label[for='snip-address2']").text('INVOICE ADDRESS LINE 2 :');
-      $("#snipcart-shipping-address-form label[for='snip-country']").text('COUNTRY (optional) :');
+      $("#snipcart-shipping-address-form label[for='snip-country']").text('COUNTY (optional) :');
       $("#snipcart-shipping-address-form label[for='snip-city']").text('TOWN CITY* :');
       $("#snipcart-shipping-address-form label[for='snip-postalCode']").text('INVOICE POSTCODE* :');
       $('#snip-layout-shipping-address label[for="snip-phone"]').text("INVOICE EMAIL ADDRESS *");
@@ -223,7 +252,7 @@ $(document).ready(function() {
       $(".js-submit").trigger("click");
     }
     if (page == 'order-details') {
-      window.location.replace('/snipcart-example/sucess/');
+      window.location.replace('/snipcart/sucess/');
     }
     if (page == 'empty-cart') {
       Snipcart.appView.close();
