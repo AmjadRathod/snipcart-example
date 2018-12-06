@@ -1,6 +1,6 @@
 Snipcart.subscribe('cart.opened', function() {
   Snipcart.appView.setTitle('');
-  $('#snipcart-title').append('<img src="/snipcart/img/logo2.jpeg" alt="Reliaprint.co.uk">');
+  $('#snipcart-title').append('<img src="/snipcart-example/img/logo2.jpeg" alt="Reliaprint.co.uk">');
   var user = Snipcart.api.user.current();
   if (user) {
     $('.snip-header__user-text').text("Signed-in as : " + user['email'])
@@ -130,8 +130,7 @@ $(document).ready(function() {
       //remove
       $('#snipcart-billingaddress-form div [data-for="province"] input').remove();
       $('#snipcart-billingaddress-form div [data-for="province"]').append('<textarea rows="6" cols="50" id="snip-province" name="province" value="" class="snipcart-state"></textarea>');
-      $('#snipcart-billingaddress-form div [data-for="country"] select').remove();
-      $('#snipcart-billingaddress-form div [data-for="country"]').append('<input type="text" id="snip-country" name="country" class="snipcart-country">');
+
 
       // lable text
       $("#snipcart-billingaddress-form label[for='snip-name']").text('YOUR NAME :');
@@ -172,8 +171,6 @@ $(document).ready(function() {
       $('div [data-for="province"]').remove();
       $('<div data-for="shippingSameAsBilling" class="snip-form__container snip-form__container--checkbox snipcart-checkbox-field"><input type="checkbox" name="shippingSameAsBilling" id="snip-shippingSameAsBilling" class="snip-product__customfields-checkbox"><label for="snip-shippingSameAsBilling" class="snip-form__label">INVOICE ADDRESS same as DELIVERY ADDRESS</label></div>').insertBefore('div [data-for="name"]');
 
-      $('#snipcart-shipping-address-form div [data-for="country"] select').remove();
-      $('#snipcart-shipping-address-form div [data-for="country"]').append('<input type="text" id="snip-country" name="country" class="snipcart-country">');
 
       $('div [data-for="country"]').insertAfter('div [data-for="address2"]');
       $('#snipcart-previous').text('<< Go Back');
