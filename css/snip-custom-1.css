@@ -352,3 +352,8 @@ a.snipcart-user-profile {
     padding-bottom: 1px;
   }
 }
+/* $('#snipcart-billingaddress-form div [data-for="country"] select').remove();
+$('#snipcart-billingaddress-form div [data-for="country"]').append('<input type="text" id="snip-country" name="country" class="snipcart-country">'); 13300*/
+/* $('#snipcart-shipping-address-form div [data-for="country"] select').remove();
+$('#snipcart-shipping-address-form div [data-for="country"]').append('<input type="text" id="snip-country" name="country" class="snipcart-country">');
+17500 */

@@ -63,6 +63,13 @@ $(document).ready(function() {
       // Snipcart.settings.onlyAllowGuests = false;
       $('#snipcart-items-header tr th:nth-child(5)').text('PRICE');
       $("#snipcart-discounts .snip-actions").append('<div id="snipcart-current-user"><div class="snip-header__user signup"><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">I&#39;M A MEMBER</span></a></div></div>');
+      $('.js-next.snip-btn.snip-btn--highlight.snip-btn--right').prop("class","js-next-invoice snip-btn snip-btn--highlight snip-btn--right");
+      $(".js-next-invoice").click(function() {
+        var curUrl = window.location.href;
+        var dir = '#!/';
+        var url = curUrl.split(dir)[0];
+        window.location.replace(url + dir + 'shipping-address');
+      });
 
       $('.snipcart-user-logout').remove();
       $("#snipcart-current-user").append('<a href="#" class="snipcart-user-logout">(logout/change)</a>');
