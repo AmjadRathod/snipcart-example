@@ -1,6 +1,101 @@
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 /* custom snipcart css file by Amjad Rathod */
 /*  */
+
+.box{
+    padding-top: 1px;
+    padding-bottom: 4px;
+    margin: 10px 0;
+    background: #d6f5f4;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+}
+/*  */
+.snip-layout .snip-form__error {
+    display: none;
+}
+.required-filed-lable {
+    display: inline-block;
+    margin: 0 0 .5em!important;
+    font-size: .9em!important;
+    color: #000;
+}
+
+#snip-email, #snip-phone {
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: auto;
+    line-height: 18px;
+    margin: 0;
+    padding: .571em .429em;
+    -webkit-transition: border .66s ease;
+    transition: border .66s ease;
+    width: 100%;
+}
+label[for=snip-name], #snipcart-billingaddress-form label[for=snip-email], #snipcart-billingaddress-form label[for=snip-address1], #snipcart-billingaddress-form label[for=snip-city], #snipcart-billingaddress-form label[for=snip-postalCode], #snipcart-shipping-address-form label[for=snip-phone] {
+    font-size: .9em!important;
+    font-weight: bold;
+    display: inline!important;
+    margin: 0 0 .5em;
+}
+label[for=snip-ownerName], label[for=snip-number], label[for=snip-cvc], label[for=snip-expirationMonth], label[for=snip-expirationYear], label[for=snip-type] {
+    font-size: .9em!important;
+    font-weight: bold;
+}
+#snip-name, #snip-email, #snipcart-billingaddress-form #snip-address1, #snipcart-billingaddress-form #snip-city, #snipcart-billingaddress-form #snip-postalCode, #snipcart-shipping-address-form #snip-phone, #snip-ownerName, #snip-number, #snip-cvc, #snip-type, #snip-expirationMonth, #snip-expirationYear {
+  border: solid 1px red;
+}
+#snip-layout-billing-address #snipcart-next-submitt {
+    background: blue;
+    color: yellow;
+}
+#snip-layout-billing-address #snipcart-previous {
+    background: brown!important;
+    color: yellow;
+}
+#snipcart-shipping-state-picker-holder {
+    display: inline-block;
+}
+#snip-layout-order-confirm .snip-layout .snip-cols {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+#snip-country, #snip-city {
+  max-width: 60%;
+}
+div[data-for="country"], div[data-for="city"], #snipcart-shipping-state-picker-holder {
+  display: inline-block;
+  max-width: 100%;
+}
+#snipcart-billingaddress-form div[data-for="city"] {
+    width: 50%;
+}
+#snipcart-billingaddress-form div[data-for="country"] {
+    width: 35%;
+}
+div[data-for="country"] input{
+    width: 140%!important;
+    max-width: 140%!important;
+}
+#snipcart-shipping-state-picker-holder {
+    width: 58%;
+    max-width: 58%!important;
+}
+div[data-for="city"] input {
+    width: 90%;
+    max-width: 90%!important;
+}
 #snipcart-login-forgotpassword-link {
   color: blue;
 }
@@ -45,7 +140,7 @@
 .snip-layout .snip-header__user {
   background: none;
   text-align: left;
-  font-size: 16px;
+  font-size: 1em;
   padding: 0;
   padding-left: 30px;
   margin-top: 30px;
@@ -72,7 +167,7 @@ a.snipcart-user-profile {
 
 #snipcart-items-header tr th:nth-child(6)::before {
   content: 'Remove';
-  font-size: 12px;
+  font-size: .75em;
   color: #000;
 }
 #snipcart-items-header tr th {
@@ -80,13 +175,13 @@ a.snipcart-user-profile {
 }
 #snipcart-items td a.snip-product__remove::before {
   content: 'Remove';
-  font-size: 14px;
+  font-size: .95em;
   text-decoration: underline;
   color: blue!important;
 }
 .snip-layout .snip-ico {
   color: #000;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 /* remove discount */
 .sub-title {
@@ -138,7 +233,7 @@ a.snipcart-user-profile {
   text-align: right;
   background: none;
   color: #000!important;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 700;
 }
 #snipcart-show-discount-box {
@@ -168,14 +263,14 @@ a.snipcart-user-profile {
   color: #000!important;
 }
 .snip-layout .snip-header__user-text .snip-header__user-mail {
-  font-size: 14px;
+  font-size: .95em;
 }
 .snip-quantity-trigger {
   visibility: hidden;
 }
 .snipcart-user-logout {
   position: relative;
-  top: -23px;
+  top: -21px;
 }
 #snipcart-previous {
   background: brown!important;
@@ -203,6 +298,17 @@ a.snipcart-user-profile {
     left: 20px;
     width: 50%!important;
   }
+  #snip-layout-order-confirm .snip-cols {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    border-bottom: solid 1.5px #000;
+    border-top: solid 1.5px #000;
+  }
+
+}
+#snip-layout-order-confirm thead, #snip-layout-order-confirm .snip-table__item, #snip-layout-order-confirm #snipcart-fees,  #snip-layout-order-confirm #snipcart-discounts {
+    display: none;
 }
 /* ḷogin btn */
 #snipcart-login-submit, #snipcart-login-cancel {
@@ -230,7 +336,112 @@ a.snipcart-user-profile {
   color: yellow;
 }
 .snipcart-user-logout {
-  z-index: 1;
+  z-index: 1;color: blue;
+}
+@media only screen and (max-width: 48em){
+    .snip-layout .snip-table--small td, .snip-layout .snip-table--small th, .snip-layout .snip-table--small tr {
+    display: inline-block!important;
+  }
+  .snip-layout .snip-table__item {
+    width: 100%;
+  }
+  .snip-layout .snip-table--small .snip-table__header {
+    display: block;
+  }
+  .snip-layout .snip-table--small td {
+    vertical-align: top;
+  }
+  .snip-layout .snip-table--small td:nth-child(1) {
+    width: 41%;
+    max-width: 41%;
+    float: left;
+  }
+  .snip-layout .snip-table--small td:nth-child(2) {
+    width: 25%;
+  }
+  .snip-layout .snip-table--small td:nth-child(3) {
+    width: 0;
+  }
+  .snip-layout .snip-table--small td:nth-child(4) {
+    width: 0;
+  }
+  .snip-layout .snip-table--small td:nth-child(5) {
+    width: 14%;
+    text-align: right;
+    margin: 0;
+    float: unset;
+  }
+  .snip-layout .snip-table--small td:nth-child(6) {
+    width: 18%;
+    float: right;
+  }
+  .snip-layout .snip-table--small td:nth-child(6) a {
+    position: unset;
+    font-size: .9em;
+    float: right;
+  }
+  #snipcart-items-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #snipcart-items #snipcart-header-total {
+    font-size: 1em;
+    position: relative;
+    left: 0;
+    text-align: right;
+    width: 79%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #snipcart-plans-header {
+      display: none!important;
+  }
+  #snipcart-discounts .snip-actions {
+      padding: 0;
+  }
+  a.snipcart-user-profile {
+    font-size: .65em;
+    font-weight: 700;
+  }
+  #snipcart-items-header tr {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #snipcart-items-header tr th:nth-child(1) {
+    width: 70%;
+  }
+  #snipcart-items-header tr th:nth-child(2) {
+    width: 0;
+  }
+  #snipcart-items-header tr th:nth-child(3) {
+    width: 0;
+  }
+  #snipcart-items-header tr th:nth-child(4) {
+    width: 0;
+  }
+  #snipcart-items-header tr th:nth-child(5) {
+    width: 15%;
+    text-align: center;
+  }
+  #snipcart-items-header tr th:nth-child(6) {
+    width: 15%;
+    text-align: right;
+  }
+    .snip-layout .snip-table--small .snip-table__header {
+        display: block;
+    }
+    .snip-layout .snip-table--small th {
+        display: inline-block;
+    }
+    .snip-layout .snip-table--small td {
+    vertical-align: top;
+  }
+  .snip-layout .snip-product__remove {
+      top: unset;
+      right: 1.5em;
+
+  }
 }
 /* mobile  */
 
@@ -238,6 +449,10 @@ a.snipcart-user-profile {
   body.snip-open {
     position: fixed;
     max-width: 100%;
+  }
+  div[data-for="country"] input{
+    width: 105%!important;
+    max-width: 105%!important;
   }
   #snipcart-login-form-container {
     left: 0;
@@ -278,15 +493,15 @@ a.snipcart-user-profile {
     text-align: center;
   }
   .snip-layout .snip-table--small td:nth-child(6) a {
-    font-size: 0;
     position: unset;
+    font-size: .9em;
   }
   #snipcart-items-header {
     padding-top: 0;
     padding-bottom: 0;
   }
   #snipcart-items #snipcart-header-total {
-    font-size: 16px;
+    font-size: 1em;
     position: relative;
     left: 0;
     text-align: right;
@@ -295,7 +510,7 @@ a.snipcart-user-profile {
     padding-bottom: 0;
   }
   a.snipcart-user-profile {
-    font-size: 10px;
+    font-size: .65em;
     font-weight: 700;
   }
   #snipcart-items-header tr {
@@ -326,10 +541,10 @@ a.snipcart-user-profile {
     position: relative;
     top: 30px;
     text-align: left;
-    font-size: 26px;
+    font-size: 1.6em;
   }
   .sub-title {
-    font-size: 18px!important;
+    font-size: 1.1em!important;
     margin: 0!important;
   }
 }
@@ -342,6 +557,7 @@ a.snipcart-user-profile {
   }
   .snip-layout .snip-header__user {
     margin-top: 0;
+    padding-left: 1em;
   }
   .snip-layout .snip-header, #snipcart-items-list tr {
     padding-top: 0;
@@ -351,9 +567,38 @@ a.snipcart-user-profile {
     padding-top: 3px;
     padding-bottom: 1px;
   }
+  #snipcart-shipping-state-picker-holder {
+      display: inline-block;
+      max-width: 49%;
+    }
 }
-/* $('#snipcart-billingaddress-form div [data-for="country"] select').remove();
-$('#snipcart-billingaddress-form div [data-for="country"]').append('<input type="text" id="snip-country" name="country" class="snipcart-country">'); 13300*/
-/* $('#snipcart-shipping-address-form div [data-for="country"] select').remove();
-$('#snipcart-shipping-address-form div [data-for="country"]').append('<input type="text" id="snip-country" name="country" class="snipcart-country">');
-17500 */
+@media only screen and (max-width: 640px)
+{
+#snip-layout-order-confirm #snipcart-items .snip-table__item, #snip-layout-order-confirm #snipcart-items-list {
+display: none!important;
+}
+#snip-layout-order-confirm #snipcart-total {
+padding-top: 0;
+}
+#snip-layout-order-confirm .sub-title {
+padding-top: 25px!important;
+}
+
+  div[data-for="country"], div[data-for="city"] {
+    display: inline-block;
+    max-width: 49%;
+  }
+  #snipcart-shipping-state-picker-holder div[data-for="country"] {
+      max-width: 95%!important;
+  }
+  #snipcart-shipping-state-picker-holder {
+  width: 51%;
+  max-width: 52%!important;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .snip-layout .snip-header__user {
+    padding-top: 10px;
+    padding-left: 1em;
+  }
+}
