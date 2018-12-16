@@ -331,4 +331,4 @@ if (Snipcart.cartIsEmpty()) {
 // Snipcart.execute('bind', 'order.completed', function (order) {
 // var url = '/snipcart-example/sucess/?order=' + order.token;
 // window.location.href = url;
-});
+// });
