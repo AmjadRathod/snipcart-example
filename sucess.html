@@ -3,6 +3,28 @@ title: order success
 layout: default
 permalink: /sucess/
 ---
+<script type="text/javascript">
+  $.ajax({
+    url: "https://app.snipcart.com/api/orders/d16e2f60-39f1-4a4c-b1c3-8a2e166d3f70",
+    beforeSend: function(xhr) {
+      xhr.setRequestHeader("Authorization", "Basic " + btoa("YjAzZGE4YWItOGY3Yi00NzlkLTllYzctNWM4NTZmMTA1NDEzNjM2Nzg5NzY4MTgwOTkxODgy")); 
+    },
+    type: 'POST',
+    dataType: 'json',
+    contentType: 'application/json',
+    processData: false,
+    data: '{"foo":"bar"}',
+    success: function (data) {
+      alert(JSON.stringify(data));
+    },
+    error: function(){
+      alert("Cannot get data");
+    }
+});
+// curl -H "Accept: application/json" \
+//     https://app.snipcart.com/api/orders/d16e2f60-39f1-4a4c-b1c3-8a2e166d3f70 \
+//     -u {'YjAzZGE4YWItOGY3Yi00NzlkLTllYzctNWM4NTZmMTA1NDEzNjM2Nzg5NzY4MTgwOTkxODgy'}:
+</script>
 <h1>Thank you for your purchase!</h1>
 <p>Your order has now been received, and you will shortly receive a confirmation email containing details of your order.
 </p>
