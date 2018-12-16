@@ -18,6 +18,9 @@
 .snip-layout .snip-form__error {
     display: none;
 }
+#snip-layout-order-confirm .js-submit {
+    background: #C70039;
+}
 .required-filed-lable {
     display: inline-block;
     margin: 0 0 .5em!important;
@@ -53,7 +56,10 @@ label[for=snip-ownerName], label[for=snip-number], label[for=snip-cvc], label[fo
     font-weight: bold;
 }
 #snip-name, #snip-email, #snipcart-billingaddress-form #snip-address1, #snipcart-billingaddress-form #snip-city, #snipcart-billingaddress-form #snip-postalCode, #snipcart-shipping-address-form #snip-phone, #snip-ownerName, #snip-number, #snip-cvc, #snip-type, #snip-expirationMonth, #snip-expirationYear {
-  border: solid 1px red;
+  border: solid 1.5px red;
+}
+#snip-company, #snip-address2, #snip-country, #snip-company, #snip-phone, #snip-province, #snipcart-shipping-address-form #snip-city, #snipcart-shipping-address-form #snip-postalCode, #snipcart-shipping-address-form #snip-address1 {
+    border: solid 1.5px #777777;
 }
 #snip-layout-billing-address #snipcart-next-submitt {
     background: blue;
@@ -117,7 +123,6 @@ div[data-for="city"] input {
   padding: 0;
 }
 #snip-province {
-  border: none;
   width: 100%;
 }
 #snip-postalCode {

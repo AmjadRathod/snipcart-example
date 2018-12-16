@@ -117,6 +117,7 @@ if (Snipcart.cartIsEmpty()) {
     }
     if (page == 'billing-address') {
         $("input[type='text']").attr('value','');
+        $("#snip-name").first().focus();
         $(".snipcart-user-logout").css({
           "visibility": "hidden"
         });
@@ -140,7 +141,7 @@ if (Snipcart.cartIsEmpty()) {
       $('<span class="required-filed-lable">  [REQUIRED]</span>').insertAfter('#snipcart-billingaddress-form div [data-for="city"] label');
       $('<span class="required-filed-lable">  [REQUIRED]</span>').insertAfter('#snipcart-billingaddress-form div [data-for="postalCode"] label');
 
-      $('div [data-for="shippingSameAsBilling"]').insertBefore('div [data-for="province"]');
+      $('div [data-for="shippingSameAsBilling"]').insertBefore('div [data-for="name"]');
       $('div [data-for="country"]').insertAfter('div [data-for="city"]');
       $('div [data-for="postalCode"]').insertAfter('div [data-for="country"]');
       $('div [data-for="province"]').insertAfter('div [data-for="phone"]');
@@ -203,6 +204,7 @@ if (Snipcart.cartIsEmpty()) {
 
     if (page == 'shipping-address') {
     //   $("input[type='text']").attr('value','');
+      $("#snip-name").first().focus();
       $('div [data-for="phone"]').insertAfter('div [data-for="name"]');
       $('div [data-for="province"]').remove();
       $('<div data-for="shippingSameAsBilling" class="snip-form__container snip-form__container--checkbox snipcart-checkbox-field"><input type="checkbox" name="shippingSameAsBilling" id="snip-shippingSameAsBilling" class="snip-product__customfields-checkbox"><label for="snip-shippingSameAsBilling" class="snip-form__label">INVOICE ADDRESS same as DELIVERY ADDRESS</label></div>').insertBefore('div [data-for="name"]');
@@ -306,8 +308,9 @@ if (Snipcart.cartIsEmpty()) {
     if (page == 'order-confirm') {
         $('.sub-title').css("padding-top","70px");
         $('.sub-title').text('Confirm Order');
+        $('#snip-layout-order-confirm .js-submit').text('Place order now');
       $('#snip-layout-order-confirm .js-submit').css({
-        "background": "#F27746",
+        "background": "#C70039",
         "color": "yellow"
       });
       $('#snip-layout-order-confirm .js-back').text('<< Go Back');
@@ -317,7 +320,7 @@ if (Snipcart.cartIsEmpty()) {
       });
     }
     if (page == 'order-details') {
-      window.location.replace('../success/');
+      // window.location.replace('../success/');
     }
     if (page == 'empty-cart') {
       Snipcart.appView.close();
