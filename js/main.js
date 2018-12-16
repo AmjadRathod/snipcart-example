@@ -321,9 +321,14 @@ if (Snipcart.cartIsEmpty()) {
     }
     if (page == 'order-details') {
       // window.location.replace('../success/');
+
     }
     if (page == 'empty-cart') {
       Snipcart.appView.close();
     }
   });
+});
+Snipcart.execute('bind', 'order.completed', function (order) {
+var url = '/snipcart-example/sucess/?order=' + order.token;
+window.location.href = url;
 });
