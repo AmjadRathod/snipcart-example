@@ -328,10 +328,11 @@ if (Snipcart.cartIsEmpty()) {
     }
   });
 });
-// Snipcart.execute('bind', 'order.completed', function (order) {
-// var url = '/snipcart-example/sucess/?order=' + order.token;
-// window.location.href = url;
-// });
+var invoiceNumber = "";
 Snipcart.subscribe('order.completed', function (data){
-  console.log(data['invoiceNumber']);
+  invoiceNumber = console.log(data['invoiceNumber']);
+});
+Snipcart.execute('bind', 'order.completed', function (order) {
+  var url = '/snipcart-example/sucess/?order=' + invoiceNumber;
+  window.location.href = url;
 });
