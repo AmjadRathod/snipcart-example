@@ -333,5 +333,5 @@ if (Snipcart.cartIsEmpty()) {
 // window.location.href = url;
 // });
 Snipcart.subscribe('order.completed', function (data){
-  console.log(data);
+  console.log(data['invoiceNumber']);
 });
