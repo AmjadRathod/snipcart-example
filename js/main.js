@@ -330,7 +330,7 @@ if (Snipcart.cartIsEmpty()) {
 });
 var invoiceNumber = "";
 Snipcart.subscribe('order.completed', function (data){
-  invoiceNumber = console.log(data['invoiceNumber']);
+  invoiceNumber = data['invoiceNumber'];
 });
 Snipcart.execute('bind', 'order.completed', function (order) {
   var url = '/snipcart-example/sucess/?order=' + invoiceNumber;
