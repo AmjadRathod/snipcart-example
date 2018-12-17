@@ -4,8 +4,12 @@ layout: default
 permalink: /sucess/
 ---
 <script type="text/javascript">
-
+  var curUrl = window.location.href;
+  var dir = '?order=';
+  var url = curUrl.split(dir)[1];
+  $('.invo').text(url);
 </script>
 <h1>Thank you for your purchase!</h1>
+<h1>Your Order INVOICE NUMBER is : <span class="invo"></span> </h1>
 <p>Your order has now been received, and you will shortly receive a confirmation email containing details of your order.
 </p>
