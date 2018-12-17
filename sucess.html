@@ -5,10 +5,8 @@ permalink: /sucess/
 ---
 <script type="text/javascript">
   var curUrl = window.location.href;
-  var dir = '=';
-  var urll = curUrl.split(dir)[0];
-  var url = curUrl.split(dir)[1];
-  $('.invo').text(url + 'test'+ urll);
+  var url = curUrl.split('=');
+  $('.invo').text(url[1]);
 </script>
 <h1>Thank you for your purchase!</h1>
 <h1>Your Order INVOICE NUMBER is : <span class="invo"></span> </h1>
